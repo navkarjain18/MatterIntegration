@@ -1,16 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MatterDemoSampleApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.MatterDemoSampleApp" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="colorPrimary">@color/bar_tab_bar</item>
+        <item name="colorPrimaryDark">@color/bar_semi_transparent</item>
+        <item name="colorAccent">@color/brand_accent_primary</item>
+        <item name="android:statusBarColor">@color/system_content_dark</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowBackground">@color/system_content_white</item>
+        <item name="cardViewStyle">@style/CardView.Light</item>
         <!-- Customize your theme here. -->
     </style>
+
+
 </resources>

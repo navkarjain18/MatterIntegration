@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="HeadlineH1">
+        <item name="android:fontFamily">@font/urbanist_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">42sp</item>
+        <item name="lineHeight">48sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">400</item>
+        <item name="android:lineSpacingExtra">-2sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="HeadlineH2">
+        <item name="android:fontFamily">@font/urbanist_regular</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:translationY">-0.4sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">400</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="lineHeight">44sp</item>
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+
+    <style name="HeadlineH3">
+        <item name="android:fontFamily">@font/urbanist_semibold</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">600</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="lineHeight">38sp</item>
+        <item name="android:translationY">-0.1sp</item>
+        <item name="android:textColor">@android:color/black</item>
+
+    </style>
+
+    <style name="HeadlineH4">
+        <item name="android:fontFamily">@font/urbanist_semibold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">600</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:translationY">-1.6sp</item>
+        <item name="lineHeight">32sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BodyLargePlus">
+        <item name="android:fontFamily">@font/urbanist_semibold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">600</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="lineHeight">24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BodyLarge">
+        <item name="android:fontFamily">@font/urbanist_regular</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">400</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="lineHeight">24sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BodyBaselinePlusPlus">
+        <item name="android:fontFamily">@font/urbanist_bold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">700</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="lineHeight">21sp</item>
+        <item name="android:translationY">-0.3sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BodyBaselinePlus">
+        <item name="android:fontFamily">@font/urbanist_semibold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">600</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="lineHeight">21sp</item>
+        <item name="android:translationY">-0.3sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BodyBaseline">
+        <item name="android:fontFamily">@font/urbanist_medium</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">500</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="lineHeight">21sp</item>
+        <item name="android:translationY">-0.3sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BodySmallTitlePlusPlus">
+        <item name="android:fontFamily">@font/urbanist_extra_bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">800</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="lineHeight">19sp</item>
+        <item name="android:translationY">-0.5sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BodySmallTitlePlus">
+        <item name="android:fontFamily">@font/urbanist_semibold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">600</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="lineHeight">19sp</item>
+        <item name="android:translationY">-0.5sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="BodySmall">
+        <item name="android:fontFamily">@font/urbanist_medium</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">500</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+        <item name="lineHeight">19sp</item>
+        <item name="android:translationY">-0.5sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="SmallFootnotePlus">
+        <item name="android:fontFamily">@font/urbanist_extra_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">800</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:translationY">-0.8sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="SmallFootnote">
+        <item name="android:fontFamily">@font/urbanist_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">500</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:translationY">-0.8sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="SmallCaptionPlus">
+        <item name="android:fontFamily">@font/urbanist_bold</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">700</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:letterSpacing">0.11</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:translationY">-1.4sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="SmallCaption">
+        <item name="android:fontFamily">@font/urbanist_medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">500</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="lineHeight">16sp</item>
+        <item name="android:translationY">-1.4sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="TabTabTiny">
+        <item name="android:fontFamily">@font/urbanist_semibold</item>
+        <item name="android:textSize">10.5sp</item>
+        <item name="android:textFontWeight" tools:ignore="NewApi">600</item>
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="lineHeight">13sp</item>
+        <item name="android:translationY">-0.2sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2023 DigiValet
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ https://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <!--for image view-->
+    <declare-styleable name="ImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+        <attr name="circular_transformation_disable" format="boolean" />
+        <attr name="circle_background_color" format="color" />
+    </declare-styleable>
+
+    <!--for sliders-->
+    <declare-styleable name="SliderView">
+        <attr name="emptyColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="thumbColor" format="color" />
+        <attr name="maxProgress" format="float" />
+        <attr name="minProgress" format="float" />
+        <attr name="colorSeeds" format="reference" />
+    </declare-styleable>
+
+    <!--for toggle-->
+    <declare-styleable name="Toggle">
+        <attr name="textOn" format="string" />
+        <attr name="textOff" format="string" />
+        <attr name="colorOff" format="color" />
+        <attr name="colorOn" format="color" />
+        <attr name="colorBorder" format="color" />
+        <attr name="colorDisabled" format="color" />
+        <attr name="on" format="boolean" />
+        <attr name="android:textSize" />
+        <attr name="android:enabled" />
+    </declare-styleable>
+
+
+    <!--Pager scrollingindicator-->
+    <attr name="scrollingPagerIndicatorStyle" />
+
+    <declare-styleable name="ScrollingPagerIndicator">
+        <attr name="spi_dotColor" format="color" />
+        <attr name="spi_dotSelectedColor" format="color" />
+        <attr name="spi_dotSize" format="dimension" />
+        <attr name="spi_dotSelectedSize" format="dimension" />
+        <attr name="spi_dotMinimumSize" format="dimension" />
+        <attr name="spi_dotSpacing" format="dimension" />
+        <attr name="spi_visibleDotCount" format="integer" />
+        <attr name="spi_visibleDotThreshold" format="integer" />
+        <attr name="spi_looped" format="boolean" />
+        <attr name="spi_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="spi_firstDotDrawable" format="reference" />
+        <attr name="spi_lastDotDrawable" format="reference" />
+    </declare-styleable>
+
+    <!--checkbox(for checkable tree view)-->
+    <declare-styleable name="CheckBoxEx">
+        <attr name="state_indeterminate" format="boolean" />
+    </declare-styleable>
+
+    <!--remote attributes-->
+    <declare-styleable name="RemoteView">
+        <attr name="remote_type" format="enum">
+            <enum name="stb" value="0" />
+            <enum name="apple_tv" value="1" />
+            <enum name="bluray" value="2" />
+            <enum name="roku" value="3" />
+            <enum name="smart_tv" value="4" />
+            <enum name="fire_tv" value="5" />
+            <enum name="movie" value="6" />
+            <enum name="kaleidescape" value="7" />
+        </attr>
+    </declare-styleable>
+
+    <!--    Read More TextView-->
+    <declare-styleable name="ReadMoreTextView">
+        <attr name="trimExpandedText" format="string" />
+        <attr name="trimCollapsedText" format="string" />
+        <attr name="trimLength" format="integer" />
+        <attr name="showTrimExpandedText" format="boolean" />
+        <attr name="colorClickableText" format="color" />
+        <attr name="trimLines" format="integer" />
+        <attr name="trimMode">
+            <enum name="trimModeLine" value="0" />
+            <enum name="trimModeLength" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

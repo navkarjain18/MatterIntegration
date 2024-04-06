@@ -7,4 +7,48 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="brand_accent_primary">#061524</color>
+    <color name="brand_accent_secondary">#1E4959</color>
+    <color name="brand_glass_one">#B3FFFFFF</color>
+    <color name="brand_glass_two">#80FFFFFF</color>
+    <color name="brand_active">#99778899</color>`
+    <color name="brand_active20">#33778899</color>
+    <color name="system_content_dark">#061524</color>
+    <color name="system_content_white">#FFFFFF</color>
+    <color name="system_error">#CC0A0A</color>
+    <color name="system_black">#000000</color>
+    <color name="system_green">#35C759</color>
+    <color name="lighter_gray">#EDEDED</color>
+    <color name="bar_tab_bar">#D6FFFFFF</color>
+    <color name="bar_semi_transparent">#C7FFFFFF</color>
+    <color name="bar_panel">#FAFAF6F5</color>
+    <color name="bar_dim">#0D000000</color>
+    <color name="system_content_dark60">#99061524</color>
+    <color name="system_content_dark30">#4D061524</color>
+    <color name="system_blue">#008FC4</color>
+    <color name="system_purple">#6750A4</color>
+    <color name="system_blue20">#33008FC4</color>
+    <color name="system_error10">#fae6e7</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="system_content_white10">#1AFFFFFF</color>
+    <color name="system_content_white30">#4DFFFFFF</color>
+    <color name="system_content_white80">#CCFFFFFF</color>
+    <color name="system_black40">#66000000</color>
+    <color name="remote_blue">#70AAEF</color>
+    <color name="remote_yellow">#C9C75C</color>
+    <color name="remote_green">#58A65D</color>
+    <color name="remote_red">#B4444D</color>
+
+
+    <color name="nav_bar_item_background">#E6ffffff</color>
+    <color name="window_background">#ffff</color>
+    <color name="slider_color_fill">@color/brand_active</color>
+    <color name="slider_color_empty">@color/bar_semi_transparent</color>
+    <color name="slider_thumb_color">@color/system_content_white</color>
+    <color name="card_elevation_shadow">#80000000</color>
+
+    <!--toggle-->
+    <color name="toggle_on">@color/brand_accent_secondary</color>
+    <color name="toggle_off">@color/brand_active20</color>
 </resources>

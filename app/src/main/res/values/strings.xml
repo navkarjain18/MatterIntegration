@@ -1,3 +1,475 @@
+<!--
+      ~ Copyright 2023 DigiValet
+      ~
+      ~ Licensed under the Apache License, Version 2.0 (the "License");
+      ~ you may not use this file except in compliance with the License.
+      ~ You may obtain a copy of the License at
+      ~
+      ~ https://www.apache.org/licenses/LICENSE-2.0
+      ~
+      ~ Unless required by applicable law or agreed to in writing, software
+      ~ distributed under the License is distributed on an "AS IS" BASIS,
+      ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+      ~ See the License for the specific language governing permissions and
+      ~ limitations under the License.
+      -->
+
 <resources>
-    <string name="app_name">MatterDemoSampleApp</string>
+    <string name="app_name">MatterDemo</string>
+    <!--others-->
+    <string name="text_ok">OK</string>
+    <string name="text_okay">Okay</string>
+    <string name="text_select">Select</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_continue">Continue</string>
+    <string name="text_send">Send</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_my_home">My Home</string>
+    <string name="text_homes">Homes</string>
+    <string name="text_location">Location</string>
+    <string name="text_room">Room</string>
+    <string name="text_rooms">Rooms</string>
+    <string name="text_loading">Loading</string>
+    <string name="text_edit">Edit</string>
+    <string name="version">version</string>
+    <string name="text_this_is_required_field">This is a required field.</string>
+    <string name="text_none">None</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_done">Done</string>
+    <string name="text_share">Share</string>
+    <string name="text_new">New</string>
+    <string name="text_search">Search</string>
+    <string name="text_discard_changes">Discard Changes</string>
+    <string name="text_discard_message">You have some unsaved changes, would you like to discard them?</string>
+    <string name="text_keep_editing">Keep Editing</string>
+    <string name="text_discard">Discard</string>
+    <string name="text_all">All</string>
+    <string name="text_locked">Locked</string>
+    <string name="text_unlocked">Unlocked</string>
+    <string name="text_retry">Retry</string>
+    <string name="text_add">Add</string>
+    <string name="text_show_more">...more</string>
+    <string name="text_show_less">&#160;less</string>
+    <string name="text_feature_not_supported">Feature not Supported</string>
+
+    <!--login-->
+    <string name="text_continue_with_google">Continue with Google</string>
+    <string name="text_continue_with_apple">Continue with Apple</string>
+    <string name="text_continue_with_email">Continue with Email</string>
+    <string name="text_continue_with_phone">Continue with Phone</string>
+    <string name="text_use_your_casadigi_registered">Use your CasaDigi-registered email or phone number to continue.</string>
+    <string name="text_app_demo">App Demo</string>
+
+    <!--email login-->
+    <string name="text_what_s_your_email">What’s your email?</string>
+    <string name="text_use_your_casadigi_registered_email">Use your CasaDigi-registered email.</string>
+    <string name="text_email">Email</string>
+    <string name="text_next">Next</string>
+    <string name="text_open_email_app">Open Email App</string>
+    <string name="text_check_your_email">Check your email</string>
+    <string name="text_click_login">Click on the link sent to \n</string>
+    <string name="text_proceed">" to proceed."</string>
+    <string name="text_incorrect_format">Incorrect format</string>
+
+    <!--otp verify-->
+    <string name="text_back">Back</string>
+    <string name="text_enter_6_digit_code">Enter 6-digit code</string>
+    <string name="text_a_code_was_sent_to_your_mobile_number">A code was sent to your mobile number</string>
+    <string name="text_otp_code">OTP Code</string>
+    <string name="text_resend_code">Resend Code</string>
+    <string name="text_invalid_code_error">Code Invalid. Try Again</string>
+    <string name="text_resend_in">Resend in</string>
+    <string name="text_seconds">seconds...</string>
+
+    <!--phone login-->
+    <string name="text_what_s_your_mobile_number">What’s your mobile number?</string>
+    <string name="text_use_your_casadigi_registered_number">Use your CasaDigi-registered number.</string>
+    <string name="text_mobile_number">Mobile Number</string>
+
+
+    <!--dashboard activity-->
+    <string name="text_register">Register</string>
+    <string name="text_device_reg_req">Device Registration Required</string>
+    <string name="text_reg_your_device">Register your device when connected to your home network.</string>
+    <string name="text_update">Update</string>
+    <string name="text_common_space_login">You are not allowed to login as a Common Space user into CasaDigi Mobile App. Please try to login into the iPad App only.</string>
+    <string name="text_station_login">You are not allowed to login as a Station user into CasaDigi Mobile App. Please try to login into the iPad App only.</string>
+    <string name="text_no_profile">Access profile is not assigned to you for the selected Home. Please contact administrator.</string>
+    <string name="text_change_home">Change Home</string>
+
+    <!--home fragment-->
+    <string name="text_favourite_rooms">Favourite Rooms</string>
+    <string name="text_no_favourite_found">"No favourite found!!"</string>
+    <string name="text_message_no_favourite">You did not mark any room as your favourite.</string>
+    <string name="text_experiences">Experiences</string>
+    <string name="text_no_experiences_found">No experiences found!!</string>
+    <string name="text_message_no_experiences">No experiences found. Either you didn\'t configure any experiences or it is hide. Please tap on the \"›\" Chevron button and explore the experience list.\n Double tap on the experience in hide view and drag and drop from hide to main view.</string>
+    <string name="text_surveillance">Surveillance</string>
+    <string name="text_message_no_surveillance">You did not mark any surveillance as your favourite.</string>
+    <string name="text_timed_out">Timed Out</string>
+    <string name="text_no_video_stream_message">Could not connect to the video stream.</string>
+    <string name="text_now_playing">Now Playing</string>
+    <string name="text_controls">Controls</string>
+    <string name="text_door_phone">Door Phone</string>
+    <string name="text_door_locks">Door Locks</string>
+    <string name="text_no_unlocked_doors_found">No unlocked doors found!</string>
+    <string name="text_no_unlocked_doors_message">We did not found any unlocked door because all configured door locks are locked.</string>
+
+    <!--mzm-->
+    <string name="text_stop_music_across_zone">Are you sure you would like to stop playing music across the zone?</string>
+    <string name="text_dlna">DLNA</string>
+    <string name="text_airplay">AirPlay</string>
+    <string name="text_spotify">Spotify</string>
+    <string name="text_this_source">this source</string>
+    <string name="text_link">Link</string>
+    <string name="text_no_playlists">No Playlists found</string>
+    <string name="text_music_service">Music Service</string>
+    <string name="text_music_player">Music Player</string>
+    <string name="text_no_music_device">No Music Device Found</string>
+    <string name="text_sonos">Sonos</string>
+
+
+    <!--room fragment-->
+    <string name="text_mode">Mode</string>
+    <string name="text_fan">Fan</string>
+    <string name="celsius">Celsius(°C)</string>
+    <string name="fahrenheit">Fahrenheit(°F)</string>
+    <string name="text_actual">ACTUAL: %s°</string>
+    <string name="text_ac_is_off">AC is off</string>
+    <string name="text_edit_widgets">Edit Widgets</string>
+    <string name="text_change_room">Change Room</string>
+    <string name="text_save">Save</string>
+    <string name="text_no_room_selected_message">You didn\'t select any room!! Please tap on the \"Location\" option to select a room.</string>
+    <string name="text_room_configuration_required">Room Configuration Required</string>
+    <string name="text_no_configuration_message">Sorry, you either do not have permission to access this feature for the selected room or it is not configured yet. Please get in touch with your home admin to gain access.</string>
+    <string name="text_hidden_widgets_title">Nothing to show!</string>
+    <string name="text_hidden_widgets_message">Because you hide all elements from the main section, tap on Edit Widgets and unhide them to get them back.</string>
+
+    <!--location activity-->
+    <string name="text_no_result_found">No Result Found</string>
+    <string name="text_try_changing_search_term">Try changing your search term and try again.</string>
+
+    <!--edit widgets-->
+    <string name="show_on_main_view">Show on main view</string>
+    <string name="hidden_on_main_view">Hidden on main view</string>
+    <string name="drop_here_to_show_controls">Drag and drop rows here to show the controls.</string>
+    <string name="drop_here_to_hide_controls">Drag and drop rows here to hide the controls.</string>
+    <string name="drop_here">Drop Here</string>
+    <string name="text_header">header</string>
+
+    <!--dialog light control-->
+    <string name="text_brightness">Brightness</string>
+    <string name="text_color">Color</string>
+    <string name="text_warmth">Warmth</string>
+
+    <!--dialog curtain controls-->
+    <string name="text_open">Open</string>
+    <string name="text_close">Close</string>
+    <string name="text_up">Up</string>
+    <string name="text_down">Down</string>
+    <string name="text_stop">Stop</string>
+    <string name="text_tilt_left">Tilt Left</string>
+    <string name="text_tilt_right">Tilt Right</string>
+    <string name="text_tilt_up">Tilt Up</string>
+    <string name="text_tilt_down">Tilt Down</string>
+
+    <!--edit room-->
+    <string name="text_name_asterisk">Name *</string>
+    <string name="text_name">Name</string>
+    <string name="text_floor">Floor *</string>
+    <string name="text_sub_areas">Sub-Areas</string>
+
+    <!--media fragment-->
+    <string name="text_favourites">Favourites</string>
+    <string name="text_favourite">Favourite</string>
+    <string name="text_message_no_favourite_channel">No favourite channel found. You did not mark any TV channel as your favourite. Please tap on the \">\" Chevron button and explore the channels list. Mark your frequently used channel as favourites by double-tapping on the TV Channel icon to get quick access to them.</string>
+    <string name="text_source_detail">Pick the media source from the services below</string>
+    <string name="text_my_devices_detail">Control your devices using your mobile phone</string>
+    <string name="text_language">Language</string>
+    <string name="text_ch">Ch</string>
+    <string name="text_vol">Vol</string>
+    <string name="text_apple_tv">Apple TV</string>
+    <string name="text_bluray">Bluray</string>
+    <string name="text_roku">Roku</string>
+    <string name="text_fire_tv">Fire TV</string>
+    <string name="text_kaleidescape">Kaleidescape</string>
+    <string name="text_flash_plus">Flash +</string>
+    <string name="text_flash_minus">Flash -</string>
+    <string name="text_return">Return</string>
+    <string name="text_apps">Apps</string>
+    <string name="text_more">More</string>
+    <string name="text_playing_in">Playing In</string>
+    <string name="text_zones">Zones</string>
+    <string name="text_Unavailable">Unavailable</string>
+    <string name="text_mute">Mute</string>
+    <string name="text_remove">Remove</string>
+    <string name="text_connect">Connect</string>
+    <string name="text_message_source">Are you sure you want to use \"%s\" as your source?</string>
+    <string name="text_message_triggered_music">We\'ve noticed that some music is playing in this room but your device may not be switched on. What would you like to do? \nStopping the music may affect other connected zones.</string>
+    <string name="text_turn_on_device">Turn on device</string>
+    <string name="text_stop_playing_music">Stop playing music</string>
+    <string name="text_multizone_error">This music system does not support multi-zone on %s.</string>
+    <string name="text_movies">Movies</string>
+    <string name="test_director">Director: %s</string>
+    <string name="test_directors">Directors: %s</string>
+    <string name="test_numbers_pad">Number Pad</string>
+    <string name="text_alphabetical">Alphabetical</string>
+    <string name="text_recently_added">Recently Added</string>
+    <string name="text_music">Music</string>
+    <string name="text_page_up">Page Up</string>
+    <string name="text_page_down">Page Down</string>
+    <string name="text_keyboard">Keyboard</string>
+    <string name="text_menu">Menu</string>
+    <string name="text_library_is_empty">Library is empty!</string>
+
+    <!--profile-->
+    <string name="text_status">Status</string>
+    <string name="text_resident">Resident</string>
+    <string name="text_residents">Residents</string>
+    <string name="text_common_spaces">Common Spaces</string>
+    <string name="text_staff">Staff</string>
+    <string name="text_station">Station</string>
+    <string name="text_default">Default</string>
+    <string name="text_logout">Logout</string>
+    <string name="text_logout_message">Are you sure you want to logout?</string>
+    <string name="text_until">Until</string>
+    <string name="text_reset_cache_confirmation_message">Would you like to reset cache?</string>
+    <string name="text_reset">Reset</string>
+
+    <!--image picker-->
+    <string name="text_gallery">Gallery</string>
+    <string name="text_camera">Camera</string>
+    <string name="text_record_audio">Record Audio</string>
+    <string name="text_record">Record</string>
+    <string name="text_pick_file">Pick a File</string>
+    <string name="text_restore_to_default">Restore to Default</string>
+    <string name="text_delete_photo">Delete Photo</string>
+    <string name="text_attach_file">Attach File</string>
+    <string name="text_attach_media">Attach Media</string>
+    <string name="text_delete_image_confirmation_message">Would you like to delete the Image?</string>
+    <string name="text_delete_photo_confirmation_message">Would you like to delete the Photo?</string>
+
+    <!--add user email and invite user-->
+    <string name="text_invite_resident">Invite the resident using their email address.</string>
+    <string name="text_pending">Pending</string>
+    <string name="text_resend_invitation">Resend Invitation</string>
+    <string name="text_delete_invitation">Delete Invitation</string>
+    <string name="text_invitation_pending">The invitation to this user is pending.</string>
+    <string name="text_invite_resent">Invite resent</string>
+
+    <!--add/edit resident-->
+    <string name="text_add_resident">Add Resident</string>
+    <string name="text_no_resident_added">No Resident Added.</string>
+    <string name="text_new_resident">New Resident</string>
+    <string name="text_resident_info">Resident Info</string>
+    <string name="text_my_account">My Account</string>
+    <string name="text_first_name">First Name *</string>
+    <string name="text_middle_name">Middle Name</string>
+    <string name="text_last_name">Last Name *</string>
+    <string name="text_preferred_name">Preferred Name</string>
+    <string name="text_template_name">Template Name *</string>
+    <string name="text_birthday">Birthday</string>
+    <string name="text_contact">Contact</string>
+    <string name="text_mobile">Mobile</string>
+    <string name="text_access">Access</string>
+    <string name="text_role">Role</string>
+    <string name="text_admin">Admin</string>
+    <string name="text_location_and_features">Location &amp; Features</string>
+    <string name="text_enter_mobile_number">Enter Mobile Number</string>
+    <string name="text_modify_access_template">Modify Access Template</string>
+    <string name="text_modify_resident_template_message">You are changing access settings that will affect all users using this template.</string>
+    <string name="text_home_level_permissions">Home-Level Permissions</string>
+    <string name="text_save_as_new_template">Save as New Template</string>
+    <string name="text_override_existing_template">Overwrite Existing Template</string>
+    <string name="text_please_select_template">Please Select Template</string>
+    <string name="text_new_template_name">New Template Name</string>
+    <string name="text_new_template_name_message">Please provide name for this template</string>
+    <string name="text_enter_template_name">Enter Template Name</string>
+    <string name="text_change_access_title">Would you like to change the access?</string>
+    <string name="text_change_access_message">The default profile will be assigned to the user</string>
+    <string name="text_delete_resident_confirmation_message">Would you like to delete the Resident?</string>
+    <string name="text_delete_invite_confirmation_message">Are you sure you want to delete invitation?</string>
+    <string name="text_delete_invite_name_confirmation_message">Are you sure you want to delete invitation to %s?</string>
+    <string name="text_switched_to">Switched to %s</string>
+
+    <!--add/edit staff-->
+    <string name="text_add_staff">Add Staff</string>
+    <string name="text_no_staff_added">No Staff Added.</string>
+    <string name="text_add_technical_staff">Add Technical Staff</string>
+    <string name="text_no_technical_staff_added">No Technical Staff Added.</string>
+    <string name="text_new_staff">New Staff</string>
+    <string name="text_staff_info">Staff Info</string>
+    <string name="text_email_address">Email Address *</string>
+    <string name="text_email_asterisk">Email *</string>
+    <string name="text_template">Template</string>
+    <string name="text_include_as_default_butler">Include as Default Butler</string>
+    <string name="text_remove_from_default_butler">Remove from Default Butler</string>
+    <string name="text_give_access_to_manage">Give access to manage</string>
+    <string name="text_delete_staff_confirmation_message">Would you like to delete the Staff?</string>
+    <string name="text_allow_resident_confirmation_message">Are you sure you want to allow the user to manage the resident profile?</string>
+    <string name="text_remove_resident_confirmation_message">Are you sure you want to remove the user to manage the resident profile?</string>
+    <string name="text_allow_staff_confirmation_message">Are you sure you want to allow the user to manage the Staff profile?</string>
+    <string name="text_remove_staff_confirmation_message">Are you sure you want to remove the user to manage the Staff profile?</string>
+    <string name="text_allow_common_space_confirmation_message">Are you sure you want to allow the user to manage the Common Space profile?</string>
+    <string name="text_remove_common_space_confirmation_message">Are you sure you want to remove the user to manage the Common Space profile?</string>
+    <string name="text_assign_default_butler_message">Do you want to assign this butler as your default butler?</string>
+    <string name="text_remove_default_butler_message">Do you want to remove this butler from the default butler list?</string>
+
+    <!--add/edit station-->
+    <string name="text_add_station">Add Station</string>
+    <string name="text_no_station_added">No Station Added.</string>
+    <string name="text_station_info">Station Info</string>
+    <string name="text_new_station">New Station</string>
+    <string name="text_delete_station_confirmation_message">Would you like to delete the Station?</string>
+
+    <!--add/edit common spaces-->
+    <string name="text_add_common_space">Add Common Space</string>
+    <string name="text_no_common_space_added">No Common Space Added.</string>
+    <string name="text_common_space_info">Common Space Info</string>
+    <string name="text_location_name_asterisk">Location Name *</string>
+    <string name="text_location_name">Location Name</string>
+    <string name="text_new_common_space">New Common Space</string>
+    <string name="text_my_tasks">My Tasks</string>
+    <string name="text_delete_common_space_confirmation_message">Would you like to delete the Common Space?</string>
+
+    <!--support ticketSubjects-->
+    <string name="text_subject">Subject</string>
+    <string name="text_subject_asterisk">Subject *</string>
+    <string name="text_new_ticket">New Ticket</string>
+    <string name="ticket_no">Ticket #</string>
+    <string name="text_add_support_ticket">Add Support Ticket</string>
+    <string name="text_no_support_ticket_added">No Support Ticket Added.</string>
+
+    <!--services-->
+    <string name="text_services">Services</string>
+    <string name="text_filters">Filters</string>
+    <string name="text_incoming">INCOMING</string>
+    <string name="text_history">HISTORY</string>
+    <string name="text_order_history">Order History</string>
+    <string name="text_older">Older</string>
+    <string name="text_add_butler">Add Butler</string>
+    <string name="text_add_butlers">Add Butlers</string>
+    <string name="text_duplicate">Duplicate</string>
+    <string name="text_duplicate_request">Duplicate Request</string>
+    <string name="text_duplicate_and_assign">Duplicate and Assign</string>
+    <string name="text_duplicate_request_details">Select butler stations and/or butlers to duplicate this request for.</string>
+    <string name="text_cancel_request">Cancel Request</string>
+    <string name="text_close_request">Close Request</string>
+    <string name="text_request_status">Request Status</string>
+    <string name="text_yesterday">Yesterday</string>
+    <string name="text_type_reason">Type Reason</string>
+    <string name="text_sent_to">Sent to</string>
+    <string name="text_record_audio_request">Record Audio Request</string>
+    <string name="text_send_message">Send Message</string>
+    <string name="text_add_to_favourites">Add to Favourite</string>
+    <string name="text_unfavourite">Unfavourite</string>
+    <string name="text_edit_preset">Edit Preset</string>
+    <string name="text_share_preset">Share Preset</string>
+    <string name="text_delete_preset">Delete Preset</string>
+    <string name="text_delete_preset_message">Are you sure you would like to delete this preset?</string>
+    <string name="text_remind">Remind</string>
+    <string name="text_just_me">Just Me</string>
+    <string name="text_default_butler">Default Butler</string>
+    <string name="text_presets">Presets</string>
+    <string name="text_preset_name">Preset Name</string>
+    <string name="text_new_category">New Category</string>
+    <string name="text_category_name">Category Name *</string>
+    <string name="text_select_icon">Select Icon</string>
+    <string name="text_search_icon">Search icon...</string>
+    <string name="text_visible_to">Visible To</string>
+    <string name="text_copy_with">Copy With</string>
+    <string name="text_assign_to">Assign To</string>
+    <string name="text_butlers">Butlers</string>
+    <string name="select_category">Select Category</string>
+    <string name="text_select_butlers">Select Butlers</string>
+    <string name="text_select_your_butlers">Select Your Butlers</string>
+    <string name="text_message_select_default_butler">To begin, select default butler/s to send your requests to.</string>
+    <string name="text_new_butler">New Butler</string>
+    <string name="text_add_selected_butler_s">Add Selected Butler/s</string>
+    <string name="text_welcome_to_services">Welcome to Services</string>
+    <string name="text_message_welcome_to_services">Whenever a request is generated, Casadigi assigns it to your default butlers. We need to add staff to begin.</string>
+    <string name="text_select_category">Select Category</string>
+    <string name="text_share_and_copy_with">Share and copy with</string>
+    <string name="text_marked_as_favourite">Marked as favourite</string>
+    <string name="text_removed_from_favourite">Removed from favourite</string>
+    <string name="text_preset_saved">Preset Saved</string>
+    <string name="text_preset_shared">Preset Shared</string>
+    <string name="text_save_as_preset_question_mark">Save as preset?</string>
+    <string name="text_no_favourite_requests">No Favourite Requests</string>
+    <string name="text_no_favourite_requests_message">You can set your preset as favourite by long tap on it and select \"Add to Favourites\" option from the popup.</string>
+    <string name="text_search_services">Search Services</string>
+    <string name="text_no_task_title">You\'ve cleared your tasks</string>
+    <string name="text_no_task_message">Incoming tasks will appear here as you receive them.</string>
+    <string name="text_no_task_history_title">Your history is empty</string>
+    <string name="text_no_history_found">No History Found!</string>
+    <string name="text_no_task_history_message">Completed tasks will appear here when you finish them</string>
+    <string name="text_reminder_sent">Reminder Sent</string>
+    <string name="text_request_sent">Request Sent</string>
+    <string name="text_save_as_preset">Save as Preset</string>
+    <string name="text_order_again">Order Again</string>
+    <string name="text_see_details">See Details</string>
+    <string name="text_requests">Requests</string>
+
+    <!--chat activity-->
+    <string name="text_message">Message</string>
+    <string name="text_message_asterisk">Message *</string>
+    <string name="text_write_message">Write Message...</string>
+    <string name="text_write_a_message">Write a message...</string>
+    <string name="text_type_message">Type Message</string>
+    <string name="text_select_option">Select Option</string>
+    <string name="text_members">Members</string>
+    <string name="text_send_to_butler">Send to Butler</string>
+    <string name="text_butlers_offline_message">Butler is on leave. Would you like to send your message to another butler?</string>
+    <string name="text_today">Today</string>
+    <string name="text_butler_assigned">Butler Assigned</string>
+    <string name="text_change_location">Change Location</string>
+    <string name="text_share_to_casadigi">Share to CasaDigi</string>
+    <string name="text_new_message">New Message</string>
+    <string name="text_recents">Recents</string>
+    <string name="text_chats">Chats</string>
+
+    <!--notification center activity-->
+    <string name="text_new_count">New (%s)</string>
+    <string name="text_activity">Activity</string>
+    <string name="text_mark_all_as_read">Mark all as read</string>
+    <string name="text_no_notifications">No Notifications</string>
+    <string name="text_accept">Accept</string>
+    <string name="text_accepted">Accepted</string>
+    <string name="text_go_to_home">Go to Home</string>
+
+    <!--push notification reply -->
+    <string name="text_enter_message">Enter Message</string>
+    <string name="text_reply">Reply</string>
+
+    <!--Experiences activity-->
+    <string name="text_new_experience">New Experience</string>
+    <string name="text_experience_name">Experience Name *</string>
+    <string name="text_where">Where</string>
+    <string name="text_when">When</string>
+    <string name="text_repeat">Repeat</string>
+    <string name="text_suggestions">Suggestions</string>
+
+    <!--permission error-->
+    <string name="text_audio_permission">Please provide microphone permission from settings to record audio.</string>
+    <string name="text_no_media_player">This media format is not supported by media player. Please install any other media player app which support \"%s\" media format.</string>
+
+    <!--widget-->
+    <string name="text_preset_widget_description">Quick access to trigger your saved presets</string>
+    <string name="text_experience_widget_description">Quick access to trigger your saved experiences</string>
+    <string name="text_now_playing_widget_description">Quick access to your current playing music</string>
+    <string name="text_room_widget_description">Quick access to your selected room status</string>
+
+    <!-- Play Icon -->
+    <string name="play_icon_upper_path_data">M 44 32 L 44 64 L 100 64 L 100 64 Z</string>
+    <string name="play_icon_bottom_path_data">M 44 96 L 44 64 L 100 64 L 100 64 Z</string>
+    <!-- Pause Icon -->
+    <string name="pause_icon_upper_path_data">M 32 40 L 32 56  L 96 56 L 96 40 Z</string>
+    <string name="pause_icon_bottom_path_data">M 32 88 L 32 72 L 96 72 L 96 88 Z</string>
+
+    <string name="play_icon_group_parts">play_icon_group_parts</string>
+    <string name="play_icon_group_top">play_icon_group_top</string>
+    <string name="play_icon_top_path_name">play_icon_top_path_name</string>
+    <string name="play_icon_group_bottom">play_icon_group_bottom</string>
+    <string name="play_icon_bottom_path_name">play_icon_bottom_path_name</string>
+
 </resources>
