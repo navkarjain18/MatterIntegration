@@ -51,11 +51,11 @@ dependencies {
     implementation(libs.matter.android.demo.sdk)
 
     // Thread Network
-    implementation(libs.play.services.threadnetwork)
-    // Thread QR Code Scanning
-    implementation(libs.code.scanner)
-    // Thread QR Code Generation
-    implementation(libs.zxing)
+//    implementation(libs.play.services.threadnetwork)
+//    // Thread QR Code Scanning
+//    implementation(libs.code.scanner)
+//    // Thread QR Code Generation
+//    implementation(libs.zxing)
 
     // AndroidX
     implementation(libs.androidx.core.ktx)

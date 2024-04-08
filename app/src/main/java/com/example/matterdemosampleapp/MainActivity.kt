@@ -82,11 +82,12 @@ class MainActivity : AppCompatActivity() {
         viewDataBinding.toolbar.btnEdit.visibility = View.VISIBLE
         viewDataBinding.toolbar.tvTitle.text = "Home"
         viewDataBinding.toolbar.btnEdit.text = "Reset"
+        viewDataBinding.toolbar.btnEdit.setOnClickListener { reset() }
     }
 
     private fun getData() {
         deviceList = runBlocking {
-             Gson().fromJson(
+            Gson().fromJson(
                 DataStorePreference.getFirstPreference(DataPreferenceKeys.MATTER_DEVICES_LIST, ""),
                 MatterDevices::class.java
             )?.matterDeviceList.orEmpty().toMutableList()
@@ -180,14 +181,23 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun reset() {
-
+        runBlocking {
+            DataStorePreference.clearAllPreference()
+        }
+        deviceList.clear()
+        setAdapterData()
     }
 
     private fun subscribeToDevicesPeriodicUpdates() {
         Log.d(TAG, "subscribeToDevicesPeriodicUpdates()")
+
+
         CoroutineScope(Dispatchers.IO).launch {
             // For each one of the real devices
             deviceList.forEachIndexed { index, device ->
+
+                unsubscribeToPeriodicUpdates(device.deviceId ?: 0)
+
                 val reportCallback =
                     object : SubscriptionHelper.ReportCallbackForDevice(device.deviceId ?: 0) {
                         override fun onReport(nodeState: NodeState) {
@@ -196,7 +206,7 @@ class MainActivity : AppCompatActivity() {
                             val onOffState = subscriptionHelper.extractAttribute(
                                 nodeState, 1, OnOffAttribute
                             ) as Boolean?
-                            Log.d(TAG, "Response onOffState [${onOffState}]")
+                            Log.d(">>///", "Response onOffState [${onOffState}]")
                             if (onOffState == null) {
                                 Log.e(TAG, "onReport(): WARNING -> onOffState is NULL. Ignoring.")
                                 return
@@ -204,7 +214,6 @@ class MainActivity : AppCompatActivity() {
                             CoroutineScope(Dispatchers.Main).launch {
                                 matterDevicesAdapter.notifyItemChanged(index, onOffState)
                             }
-
                         }
                     }
 
@@ -226,6 +235,19 @@ class MainActivity : AppCompatActivity() {
                     return@forEachIndexed
                 }
             }
+        }
+    }
+
+    private suspend fun unsubscribeToPeriodicUpdates(deviceId :Long) {
+        Log.d(TAG, "unsubscribeToPeriodicUpdates()")
+
+        try {
+            val connectedDevicePtr =
+                chipClient.getConnectedDevicePointer(deviceId )
+            subscriptionHelper.awaitUnsubscribeToPeriodicUpdates(connectedDevicePtr)
+        } catch (e: IllegalStateException) {
+            Log.e(TAG, "Can't get connectedDevicePointer for $deviceId.")
+            return
         }
     }
 
