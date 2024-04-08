@@ -13,7 +13,7 @@ import javax.inject.Inject
 class MatterDevicesAdapter @Inject constructor() :
     RecyclerView.Adapter<MatterDevicesAdapter.ViewHolder>() {
 
-    private var list = listOf<MatterDevice?>()
+    var list = listOf<MatterDevice?>()
     private var itemClickListener: OnViewClickListener? = null
 
 
@@ -29,18 +29,32 @@ class MatterDevicesAdapter @Inject constructor() :
         return list.size
     }
 
-    class ViewHolder(var binding: RowMatterDeviceItemBinding) : RecyclerView.ViewHolder(
+    class ViewHolder(val binding: RowMatterDeviceItemBinding) : RecyclerView.ViewHolder(
         binding.root
     )
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        setView(list[position], holder.binding)
+        setView(position, holder.binding)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int, payloads: MutableList<Any>) {
+        if(payloads.isNotEmpty()){
+            holder.binding.labeledSwitch.isOn = payloads[0] as Boolean
+        } else super.onBindViewHolder(holder, position, payloads)
     }
 
     private fun setView(
-        matterDevice: MatterDevice?, binding: RowMatterDeviceItemBinding
+        position: Int, binding: RowMatterDeviceItemBinding
     ) {
+        val matterDevice = list[position]
         binding.tvName.text = matterDevice?.name
+
+        binding.labeledSwitch.isOn = matterDevice?.isOn == true
+
+        binding.labeledSwitch.setOnToggledListener { toggleableView, isOn ->
+            list[position]?.isOn = isOn
+            itemClickListener?.onItemClick(toggleableView, matterDevice)
+        }
     }
 
     /**

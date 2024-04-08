@@ -48,7 +48,7 @@ dependencies {
     implementation(libs.play.services.home)
 
     // Matter Android Demo SDK
-//    implementation(libs.matter.android.demo.sdk)
+    implementation(libs.matter.android.demo.sdk)
 
     // Thread Network
     implementation(libs.play.services.threadnetwork)
@@ -68,8 +68,11 @@ dependencies {
     implementation(libs.preference)
 
     // Datastore
-    implementation(libs.datastore)
+//    implementation(libs.datastore)
     implementation(libs.datastore.core)
+
+    /*gson*/
+    implementation(libs.gson)
 
     // Hilt
     implementation(libs.hilt.android)

@@ -6,21 +6,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_4sdp"
-        app:cardBackgroundColor="@color/system_content_dark"
+        android:elevation="@dimen/_0sdp"
+        android:outlineAmbientShadowColor="@color/transparent"
         app:cardCornerRadius="@dimen/_10sdp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            android:background="@color/system_content_dark"
-            android:paddingHorizontal="@dimen/_16sdp">
+            android:background="@color/brand_active"
+            android:clipToPadding="false">
 
             <TextView
                 android:id="@+id/tv_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="@dimen/_16sdp"
+                android:layout_marginStart="@dimen/_16sdp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textAppearance="@style/BodySmall"
@@ -36,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
                 android:textSize="0sp"
                 app:colorBorder="@color/system_content_white30"
                 app:colorOff="@color/transparent"
