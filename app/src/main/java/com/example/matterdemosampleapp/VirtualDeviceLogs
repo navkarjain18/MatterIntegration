@@ -1,0 +1,866 @@
+*** onCommissioningRequested ***:
+deviceDescriptor: deviceType [0] vendorId [65521] productId [32768]
+networkLocation: IP address toString() [fe80::100e:fdb0:e58f:5d2/fe80::100e:fdb0:e58f:5d2%wlan0] IP address hostAddress [fe80::100e:fdb0:e58f:5d2%wlan0] port [5540]
+passCode [57180949]
+2024-04-19 14:58:58.163 15415-15415 >>//                    com.example.matterdemosampleapp      D  Commissioning: App fabric -> ChipClient.establishPaseConnection(): deviceId [8865415817918055704]
+2024-04-19 14:58:58.188 15415-15415 CTL                     com.example.matterdemosampleapp      D  JNI_OnLoad() called
+2024-04-19 14:58:58.188 15415-15415 CTL                     com.example.matterdemosampleapp      D  Loading Java class references.
+2024-04-19 14:58:58.188 15415-15415 CTL                     com.example.matterdemosampleapp      D  Java class references loaded.
+2024-04-19 14:58:58.188 15415-15415 DL                      com.example.matterdemosampleapp      D  AndroidChipPlatform JNI_OnLoad() called
+2024-04-19 14:58:58.188 15415-15415 SPT                     com.example.matterdemosampleapp      E  JavaVM is already set
+2024-04-19 14:58:58.188 15415-15415 DL                      com.example.matterdemosampleapp      D  Loading Java class references.
+2024-04-19 14:58:58.188 15415-15415 DL                      com.example.matterdemosampleapp      D  Java class references loaded.
+2024-04-19 14:58:58.207 15415-15415 Compatibil...geReporter com.example.matterdemosampleapp      D  Compat change id reported: 270306772; UID 11590; state: ENABLED
+2024-04-19 14:58:58.211 15415-15415 Compatibil...geReporter com.example.matterdemosampleapp      D  Compat change id reported: 235355681; UID 11590; state: ENABLED
+2024-04-19 14:58:58.220 15415-15415 CTL                     com.example.matterdemosampleapp      D  newDeviceController() called
+2024-04-19 14:58:58.221 15415-15415 CTL                     com.example.matterdemosampleapp      D  Stopping commissioning discovery over DNS-SD
+2024-04-19 14:58:58.221 15415-15415 CTL                     com.example.matterdemosampleapp      D  Setting attestation nonce to random value
+2024-04-19 14:58:58.221 15415-15415 CTL                     com.example.matterdemosampleapp      D  Setting CSR nonce to random value
+2024-04-19 14:58:58.221 15415-15415 CTL                     com.example.matterdemosampleapp      D  Setting attestation nonce to random value
+2024-04-19 14:58:58.221 15415-15415 CTL                     com.example.matterdemosampleapp      D  Setting CSR nonce to random value
+2024-04-19 14:58:58.221 15415-15415 CTL                     com.example.matterdemosampleapp      D  Setting attestation nonce from parameters
+2024-04-19 14:58:58.221 15415-15415 CTL                     com.example.matterdemosampleapp      D  Setting CSR nonce from parameters
+2024-04-19 14:58:58.221 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key AndroidDeviceControllerKey
+2024-04-19 14:58:58.221 15415-15415 CTL                     com.example.matterdemosampleapp      D  No existing credentials provided: generating ephemeral local NOC chain with OperationalCredentialsIssuer
+2024-04-19 14:58:58.239 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key AndroidCARootCert1
+2024-04-19 14:58:58.240 15415-15415 CTL                     com.example.matterdemosampleapp      D  Generating NOC
+2024-04-19 14:58:58.250 15415-15415 IN                      com.example.matterdemosampleapp      D  UDP::Init bind&listen port=0
+2024-04-19 14:58:58.251 15415-15415 IN                      com.example.matterdemosampleapp      D  UDP::Init bound to port=49677
+2024-04-19 14:58:58.251 15415-15415 IN                      com.example.matterdemosampleapp      D  UDP::Init bind&listen port=0
+2024-04-19 14:58:58.251 15415-15415 IN                      com.example.matterdemosampleapp      D  UDP::Init bound to port=44512
+2024-04-19 14:58:58.251 15415-15415 IN                      com.example.matterdemosampleapp      D  BLEBase::Init - setting/overriding transport
+2024-04-19 14:58:58.251 15415-15415 IN                      com.example.matterdemosampleapp      D  TransportMgr initialized
+2024-04-19 14:58:58.251 15415-15415 FP                      com.example.matterdemosampleapp      D  Initializing FabricTable from persistent storage
+2024-04-19 14:58:58.251 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key g/lkgt
+2024-04-19 14:58:58.251 15415-15415 TS                      com.example.matterdemosampleapp      D  Last Known Good Time: 2023-03-10T14:08:00
+2024-04-19 14:58:58.251 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key g/fidx
+2024-04-19 14:58:58.251 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/n
+2024-04-19 14:58:58.251 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/r
+2024-04-19 14:58:58.251 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/m
+2024-04-19 14:58:58.251 15415-15415 FP                      com.example.matterdemosampleapp      D  Fabric index 0x1 was retrieved from storage. Compressed FabricId 0xC8478D698D5A7A63, FabricId 0x0000000000000001, NodeId 0x000000000001B669, VendorId 0xFFF4
+2024-04-19 14:58:58.252 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key g/fs/c
+2024-04-19 14:58:58.252 15415-15415 KeyValueStoreManager    com.example.matterdemosampleapp      D  Key 'g/fs/c' not found in shared preferences
+2024-04-19 14:58:58.252 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key g/gcc
+2024-04-19 14:58:58.252 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key g/gdc
+2024-04-19 14:58:58.252 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key g/gcc
+2024-04-19 14:58:58.252 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key g/gdc
+2024-04-19 14:58:58.252 15415-15415 ZCL                     com.example.matterdemosampleapp      D  Using ZAP configuration...
+2024-04-19 14:58:58.253 15415-15415 CTL                     com.example.matterdemosampleapp      D  System State Initialized...
+2024-04-19 14:58:58.253 15415-15415 CTL                     com.example.matterdemosampleapp      D  Intermediate CA is not needed
+2024-04-19 14:58:58.253 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/r
+2024-04-19 14:58:58.253 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/r
+2024-04-19 14:58:58.254 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/n
+2024-04-19 14:58:58.254 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/r
+2024-04-19 14:58:58.254 15415-15415 FP                      com.example.matterdemosampleapp      D  Validating NOC chain
+2024-04-19 14:58:58.266 15415-15415 FP                      com.example.matterdemosampleapp      D  NOC chain validation successful
+2024-04-19 14:58:58.266 15415-15415 FP                      com.example.matterdemosampleapp      D  Updated fabric at index: 0x1, Node ID: 0x000000000001B669
+2024-04-19 14:58:58.266 15415-15415 TS                      com.example.matterdemosampleapp      D  Last Known Good Time: 2023-03-10T14:08:00
+2024-04-19 14:58:58.266 15415-15415 TS                      com.example.matterdemosampleapp      D  New proposed Last Known Good Time: 2021-06-10T00:00:00
+2024-04-19 14:58:58.266 15415-15415 TS                      com.example.matterdemosampleapp      D  Retaining current Last Known Good Time
+2024-04-19 14:58:58.266 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key g/sri
+2024-04-19 14:58:58.266 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/s/69B024EBD085EBE7
+2024-04-19 14:58:58.266 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Deleting key g/s/dUGiwDVmiqI9b2tEsTszJw==
+2024-04-19 14:58:58.267 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Deleting key f/1/s/69B024EBD085EBE7
+2024-04-19 14:58:58.267 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/s/0DF57EE88CDC6686
+2024-04-19 14:58:58.267 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Deleting key g/s/ZBQa2G0GerIR5gp8445sKQ==
+2024-04-19 14:58:58.267 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Deleting key f/1/s/0DF57EE88CDC6686
+2024-04-19 14:58:58.267 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key g/sri
+2024-04-19 14:58:58.267 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key g/fs/c
+2024-04-19 14:58:58.268 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key f/1/m
+2024-04-19 14:58:58.268 15415-15415 FP                      com.example.matterdemosampleapp      D  Metadata for Fabric 0x1 persisted to storage.
+2024-04-19 14:58:58.268 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key f/1/n
+2024-04-19 14:58:58.268 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Deleting key f/1/i
+2024-04-19 14:58:58.268 15415-15415 TS                      com.example.matterdemosampleapp      D  Committing Last Known Good Time to storage: 2023-03-10T14:08:00
+2024-04-19 14:58:58.268 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key g/lkgt
+2024-04-19 14:58:58.268 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Deleting key g/fs/c
+2024-04-19 14:58:58.268 15415-15415 CTL                     com.example.matterdemosampleapp      D  Joined the fabric at index 1. Fabric ID is 0x0000000000000001 (Compressed Fabric ID: C8478D698D5A7A63)
+2024-04-19 14:58:58.268 15415-15415 CTL                     com.example.matterdemosampleapp      D  *** Missing DeviceAttestationVerifier configuration at DeviceCommissioner init: using global default, consider passing one in CommissionerInitParams.
+2024-04-19 14:58:58.268 15415-15415 CTL                     com.example.matterdemosampleapp      D  Setting up group data for Fabric Index 1 with Compressed Fabric ID:
+2024-04-19 14:58:58.268 15415-15415 SPT                     com.example.matterdemosampleapp      D  0xc8, 0x47, 0x8d, 0x69, 0x8d, 0x5a, 0x7a, 0x63,
+2024-04-19 14:58:58.269 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/g
+2024-04-19 14:58:58.269 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/k/0
+2024-04-19 14:58:58.269 15415-15415 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key f/1/k/0
+2024-04-19 14:58:58.270 15415-15415 ChipDeviceController    com.example.matterdemosampleapp      D  Establishing PASE connection with ID: 8865415817918055704
+2024-04-19 14:58:58.270 15415-15624 CTL                     com.example.matterdemosampleapp      D  IO thread starting
+2024-04-19 14:58:58.270 15415-15415 IN                      com.example.matterdemosampleapp      D  SecureSession[0xb400007caa7249d8]: Allocated Type:1 LSID:40649
+2024-04-19 14:58:58.270 15415-15415 SC                      com.example.matterdemosampleapp      D  Assigned local session key ID 40649
+2024-04-19 14:58:58.270 15415-15415 EM                      com.example.matterdemosampleapp      D  <<< [E:57631i S:0 M:88419846] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:20 (SecureChannel:PBKDFParamRequest)
+2024-04-19 14:58:58.270 15415-15415 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419846 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2]:5540'
+2024-04-19 14:58:58.270 15415-15415 SC                      com.example.matterdemosampleapp      D  Sent PBKDF param request
+2024-04-19 14:58:58.270 15415-15624 DL                      com.example.matterdemosampleapp      D  _OnPlatformEvent
+2024-04-19 14:58:58.278 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57631i S:0 M:26015907 (Ack:88419846)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)
+2024-04-19 14:58:58.279 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57631i, Delegate: 0xb400007d3a7380e8
+2024-04-19 14:58:58.279 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:88419846 from Retrans Table on exchange 57631i
+2024-04-19 14:58:58.279 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57631i S:0 M:88419847 (Ack:26015907)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.279 15415-15624 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419847 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540'
+2024-04-19 14:58:58.279 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:26015907 on exchange 57631i
+2024-04-19 14:58:58.279 15415-15624 SC                      com.example.matterdemosampleapp      D  Received PBKDF param response
+2024-04-19 14:58:58.280 15415-15624 SC                      com.example.matterdemosampleapp      D  Peer assigned session ID 41566
+2024-04-19 14:58:58.445 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57631i S:0 M:88419848 (Ack:26015907)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:22 (SecureChannel:PASE_Pake1)
+2024-04-19 14:58:58.445 15415-15624 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419848 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540'
+2024-04-19 14:58:58.446 15415-15624 SC                      com.example.matterdemosampleapp      D  Sent spake2p msg1
+2024-04-19 14:58:58.532 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57631i S:0 M:26015908 (Ack:88419848)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:23 (SecureChannel:PASE_Pake2)
+2024-04-19 14:58:58.532 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57631i, Delegate: 0xb400007d3a7380e8
+2024-04-19 14:58:58.532 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:88419848 from Retrans Table on exchange 57631i
+2024-04-19 14:58:58.532 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57631i S:0 M:88419849 (Ack:26015908)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.532 15415-15624 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419849 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540'
+2024-04-19 14:58:58.533 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:26015908 on exchange 57631i
+2024-04-19 14:58:58.533 15415-15624 SC                      com.example.matterdemosampleapp      D  Received spake2p msg2
+2024-04-19 14:58:58.550 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57631i S:0 M:88419850 (Ack:26015908)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:24 (SecureChannel:PASE_Pake3)
+2024-04-19 14:58:58.550 15415-15624 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419850 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540'
+2024-04-19 14:58:58.551 15415-15624 SC                      com.example.matterdemosampleapp      D  Sent spake2p msg3
+2024-04-19 14:58:58.558 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57631i S:0 M:26015909 (Ack:88419850)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+2024-04-19 14:58:58.558 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57631i, Delegate: 0xb400007d3a7380e8
+2024-04-19 14:58:58.558 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:88419850 from Retrans Table on exchange 57631i
+2024-04-19 14:58:58.559 15415-15624 SC                      com.example.matterdemosampleapp      D  SecureSession[0xb400007caa7249d8]: Moving from state 'kEstablishing' --> 'kActive'
+2024-04-19 14:58:58.559 15415-15624 IN                      com.example.matterdemosampleapp      D  SecureSession[0xb400007caa7249d8]: Activated - Type:1 LSID:40649
+2024-04-19 14:58:58.559 15415-15624 IN                      com.example.matterdemosampleapp      D  New secure session activated for device <FFFFFFFB00000000, 0>, LSID:40649 PSID:41566!
+2024-04-19 14:58:58.559 15415-15624 CTL                     com.example.matterdemosampleapp      D  Remote device completed SPAKE2+ handshake
+2024-04-19 14:58:58.559 15415-15624 >>//                    com.example.matterdemosampleapp      D  BaseCompletionListener onPairingComplete(): code [0]
+2024-04-19 14:58:58.559 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57631i S:0 M:88419851 (Ack:26015909)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.559 15415-15624 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419851 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540'
+2024-04-19 14:58:58.560 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:26015909 on exchange 57631i
+2024-04-19 14:58:58.560 15415-15415 >>//                    com.example.matterdemosampleapp      D  Commissioning: App fabric -> ChipClient.commissionDevice(): deviceId [8865415817918055704]
+2024-04-19 14:58:58.560 15415-15415 CTL                     com.example.matterdemosampleapp      D  commissionDevice() called
+2024-04-19 14:58:58.560 15415-15415 CTL                     com.example.matterdemosampleapp      D  Setting attestation nonce from parameters
+2024-04-19 14:58:58.560 15415-15415 CTL                     com.example.matterdemosampleapp      D  Setting CSR nonce from parameters
+2024-04-19 14:58:58.560 15415-15415 CTL                     com.example.matterdemosampleapp      D  Commission called for node ID 0x7B0848B725228518
+2024-04-19 14:58:58.560 15415-15415 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'SecurePairing' -> 'ReadCommissioningInfo'
+2024-04-19 14:58:58.560 15415-15415 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'ReadCommissioningInfo'
+2024-04-19 14:58:58.560 15415-15415 CTL                     com.example.matterdemosampleapp      D  Sending request for commissioning information
+2024-04-19 14:58:58.560 15415-15415 DMG                     com.example.matterdemosampleapp      D  SendReadRequest ReadClient[0xb400007bda724310]: Sending Read Request
+2024-04-19 14:58:58.560 15415-15415 EM                      com.example.matterdemosampleapp      D  <<< [E:57632i S:40649 M:263562818] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)
+2024-04-19 14:58:58.560 15415-15415 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562818 on secure session with LSID: 40649
+2024-04-19 14:58:58.560 15415-15415 DMG                     com.example.matterdemosampleapp      D  MoveToState ReadClient[0xb400007bda724310]: Moving to [AwaitingIn]
+2024-04-19 14:58:58.573 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57632i S:40649 M:204566756 (Ack:263562818)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+2024-04-19 14:58:58.573 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57632i, Delegate: 0xb400007bda724320
+2024-04-19 14:58:58.573 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:263562818 from Retrans Table on exchange 57632i
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  ReportDataMessage =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  	AttributeReportIBs =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		AttributeReportIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			AttributeDataIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				DataVersion = 0xdad74fbc,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				AttributePathIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Endpoint = 0x0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Cluster = 0x31,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Attribute = 0x0000_0003,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				}
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				Data = 0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		AttributeReportIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			AttributeDataIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				DataVersion = 0x5c7fa99f,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				AttributePathIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Endpoint = 0x0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Cluster = 0x28,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Attribute = 0x0000_0004,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				}
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				Data = 32768,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		AttributeReportIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			AttributeDataIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				DataVersion = 0x5c7fa99f,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				AttributePathIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Endpoint = 0x0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Cluster = 0x28,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Attribute = 0x0000_0002,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				}
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				Data = 65521,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		AttributeReportIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			AttributeDataIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				DataVersion = 0x5d1206e5,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				AttributePathIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Endpoint = 0x0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Cluster = 0x30,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Attribute = 0x0000_0003,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				}
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				Data = 0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		AttributeReportIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			AttributeDataIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				DataVersion = 0x5d1206e5,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				AttributePathIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Endpoint = 0x0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Cluster = 0x30,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Attribute = 0x0000_0002,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				}
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				Data = 0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		AttributeReportIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			AttributeDataIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				DataVersion = 0x5d1206e5,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				AttributePathIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Endpoint = 0x0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Cluster = 0x30,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Attribute = 0x0000_0001,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				}
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				Data =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x0 = 60,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x1 = 900,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		AttributeReportIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			AttributeDataIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				DataVersion = 0x5d1206e5,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				AttributePathIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Endpoint = 0x0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Cluster = 0x30,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Attribute = 0x0000_0000,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				}
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				Data = 0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		AttributeReportIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			AttributeDataIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				DataVersion = 0xdad74fbc,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				AttributePathIB =
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Endpoint = 0x0,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Cluster = 0x31,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  					Attribute = 0x0000_FFFC,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				}
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  				Data = 4,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  	SuppressResponse = true,
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:58:58.573 15415-15624 DMG                     com.example.matterdemosampleapp      D  }
+2024-04-19 14:58:58.574 15415-15624 CTL                     com.example.matterdemosampleapp      D  ----- NetworkCommissioning Features: has Ethernet. endpointid = 0
+2024-04-19 14:58:58.574 15415-15624 >>//                    com.example.matterdemosampleapp      D  onReadCommissioningInfo: vendorId [65521]  productId [32768]  wifiEndpointId [65535] threadEndpointId [65535]
+2024-04-19 14:58:58.574 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [ReadCommissioningInfo]  errorCode [0]
+2024-04-19 14:58:58.574 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'ReadCommissioningInfo'
+2024-04-19 14:58:58.574 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'ReadCommissioningInfo' -> 'ArmFailSafe'
+2024-04-19 14:58:58.574 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'ArmFailSafe'
+2024-04-19 14:58:58.574 15415-15624 CTL                     com.example.matterdemosampleapp      D  Arming failsafe (30 seconds)
+2024-04-19 14:58:58.574 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddingComm]
+2024-04-19 14:58:58.574 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddedComma]
+2024-04-19 14:58:58.574 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57633i S:40649 M:263562819] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 14:58:58.574 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562819 on secure session with LSID: 40649
+2024-04-19 14:58:58.574 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [CommandSen]
+2024-04-19 14:58:58.575 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57632i S:40649 M:263562820 (Ack:204566756)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.575 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562820 on secure session with LSID: 40649
+2024-04-19 14:58:58.575 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:204566756 on exchange 57632i
+2024-04-19 14:58:58.583 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57633i S:40649 M:204566757 (Ack:263562819)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 14:58:58.583 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57633i, Delegate: 0xb400007bca723c98
+2024-04-19 14:58:58.584 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:263562819 from Retrans Table on exchange 57633i
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [ResponseRe]
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  InvokeResponseMessage =
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  	suppressResponse = false,
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InvokeResponseIBs =
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  		InvokeResponseIB =
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  			CommandDataIB =
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandPathIB =
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  					EndpointId = 0x0,
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  					ClusterId = 0x30,
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  					CommandId = 0x1,
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandFields =
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x0 = 0,
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x1 = "" (0 chars),
+2024-04-19 14:58:58.584 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.585 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.585 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.585 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.585 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.585 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:58:58.585 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.585 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:58:58.585 15415-15624 DMG                     com.example.matterdemosampleapp      D  },
+2024-04-19 14:58:58.585 15415-15624 DMG                     com.example.matterdemosampleapp      D  Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0001
+2024-04-19 14:58:58.585 15415-15624 CTL                     com.example.matterdemosampleapp      D  Received ArmFailSafe response errorCode=0
+2024-04-19 14:58:58.585 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [ArmFailSafe]  errorCode [0]
+2024-04-19 14:58:58.586 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'ArmFailSafe'
+2024-04-19 14:58:58.586 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'ArmFailSafe' -> 'ConfigRegulatory'
+2024-04-19 14:58:58.586 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'ConfigRegulatory'
+2024-04-19 14:58:58.586 15415-15624 CTL                     com.example.matterdemosampleapp      D  Setting Regulatory Config
+2024-04-19 14:58:58.586 15415-15624 CTL                     com.example.matterdemosampleapp      D  Device does not support configurable regulatory location
+2024-04-19 14:58:58.586 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddingComm]
+2024-04-19 14:58:58.586 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddedComma]
+2024-04-19 14:58:58.586 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57634i S:40649 M:263562821] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 14:58:58.586 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562821 on secure session with LSID: 40649
+2024-04-19 14:58:58.587 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [CommandSen]
+2024-04-19 14:58:58.587 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AwaitingDe]
+2024-04-19 14:58:58.587 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57633i S:40649 M:263562822 (Ack:204566757)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.587 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562822 on secure session with LSID: 40649
+2024-04-19 14:58:58.587 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:204566757 on exchange 57633i
+2024-04-19 14:58:58.603 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57634i S:40649 M:204566758 (Ack:263562821)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 14:58:58.603 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57634i, Delegate: 0xb400007bca7248f8
+2024-04-19 14:58:58.603 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:263562821 from Retrans Table on exchange 57634i
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [ResponseRe]
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  InvokeResponseMessage =
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  	suppressResponse = false,
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InvokeResponseIBs =
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  		InvokeResponseIB =
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  			CommandDataIB =
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandPathIB =
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  					EndpointId = 0x0,
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  					ClusterId = 0x30,
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  					CommandId = 0x3,
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandFields =
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x0 = 0,
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x1 = "" (0 chars),
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  },
+2024-04-19 14:58:58.603 15415-15624 DMG                     com.example.matterdemosampleapp      D  Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0003
+2024-04-19 14:58:58.603 15415-15624 CTL                     com.example.matterdemosampleapp      D  Received SetRegulatoryConfig response errorCode=0
+2024-04-19 14:58:58.604 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [ConfigRegulatory]  errorCode [0]
+2024-04-19 14:58:58.604 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'ConfigRegulatory'
+2024-04-19 14:58:58.604 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'ConfigRegulatory' -> 'SendPAICertificateRequest'
+2024-04-19 14:58:58.604 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'SendPAICertificateRequest'
+2024-04-19 14:58:58.604 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sending request for PAI certificate
+2024-04-19 14:58:58.604 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sending Certificate Chain request to 0xb400007d3a738098 device
+2024-04-19 14:58:58.604 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddingComm]
+2024-04-19 14:58:58.604 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddedComma]
+2024-04-19 14:58:58.604 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57635i S:40649 M:263562823] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 14:58:58.604 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562823 on secure session with LSID: 40649
+2024-04-19 14:58:58.605 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [CommandSen]
+2024-04-19 14:58:58.605 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AwaitingDe]
+2024-04-19 14:58:58.605 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57634i S:40649 M:263562824 (Ack:204566758)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.605 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562824 on secure session with LSID: 40649
+2024-04-19 14:58:58.605 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:204566758 on exchange 57634i
+2024-04-19 14:58:58.614 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57635i S:40649 M:204566759 (Ack:263562823)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 14:58:58.614 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57635i, Delegate: 0xb400007bca723c98
+2024-04-19 14:58:58.614 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:263562823 from Retrans Table on exchange 57635i
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [ResponseRe]
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  InvokeResponseMessage =
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  	suppressResponse = false,
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InvokeResponseIBs =
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  		InvokeResponseIB =
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  			CommandDataIB =
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandPathIB =
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  					EndpointId = 0x0,
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  					ClusterId = 0x3e,
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  					CommandId = 0x3,
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandFields =
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x0 = [
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  							... (byte string too long) ...
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  					] (463 bytes)
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.614 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.615 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.615 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:58:58.615 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.615 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:58:58.615 15415-15624 DMG                     com.example.matterdemosampleapp      D  },
+2024-04-19 14:58:58.615 15415-15624 DMG                     com.example.matterdemosampleapp      D  Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+2024-04-19 14:58:58.615 15415-15624 CTL                     com.example.matterdemosampleapp      D  Received certificate chain from the device
+2024-04-19 14:58:58.615 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [SendPAICertificateRequest]  errorCode [0]
+2024-04-19 14:58:58.615 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'SendPAICertificateRequest'
+2024-04-19 14:58:58.615 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'SendPAICertificateRequest' -> 'SendDACCertificateRequest'
+2024-04-19 14:58:58.615 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'SendDACCertificateRequest'
+2024-04-19 14:58:58.615 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sending request for DAC certificate
+2024-04-19 14:58:58.615 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sending Certificate Chain request to 0xb400007d3a738098 device
+2024-04-19 14:58:58.615 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddingComm]
+2024-04-19 14:58:58.615 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddedComma]
+2024-04-19 14:58:58.615 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57636i S:40649 M:263562825] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 14:58:58.615 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562825 on secure session with LSID: 40649
+2024-04-19 14:58:58.616 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [CommandSen]
+2024-04-19 14:58:58.616 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AwaitingDe]
+2024-04-19 14:58:58.616 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57635i S:40649 M:263562826 (Ack:204566759)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.616 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562826 on secure session with LSID: 40649
+2024-04-19 14:58:58.616 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:204566759 on exchange 57635i
+2024-04-19 14:58:58.628 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57636i S:40649 M:204566760 (Ack:263562825)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 14:58:58.629 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57636i, Delegate: 0xb400007bca7248f8
+2024-04-19 14:58:58.629 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:263562825 from Retrans Table on exchange 57636i
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [ResponseRe]
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  InvokeResponseMessage =
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  	suppressResponse = false,
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InvokeResponseIBs =
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  		InvokeResponseIB =
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  			CommandDataIB =
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandPathIB =
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  					EndpointId = 0x0,
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  					ClusterId = 0x3e,
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  					CommandId = 0x3,
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandFields =
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x0 = [
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  							... (byte string too long) ...
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  					] (493 bytes)
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  },
+2024-04-19 14:58:58.629 15415-15624 DMG                     com.example.matterdemosampleapp      D  Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+2024-04-19 14:58:58.629 15415-15624 CTL                     com.example.matterdemosampleapp      D  Received certificate chain from the device
+2024-04-19 14:58:58.630 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [SendDACCertificateRequest]  errorCode [0]
+2024-04-19 14:58:58.630 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'SendDACCertificateRequest'
+2024-04-19 14:58:58.630 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'SendDACCertificateRequest' -> 'SendAttestationRequest'
+2024-04-19 14:58:58.630 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'SendAttestationRequest'
+2024-04-19 14:58:58.630 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sending Attestation Request to the device.
+2024-04-19 14:58:58.630 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sending Attestation request to 0xb400007d3a738098 device
+2024-04-19 14:58:58.630 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddingComm]
+2024-04-19 14:58:58.630 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddedComma]
+2024-04-19 14:58:58.630 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57637i S:40649 M:263562827] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 14:58:58.630 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562827 on secure session with LSID: 40649
+2024-04-19 14:58:58.630 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [CommandSen]
+2024-04-19 14:58:58.630 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sent Attestation request, waiting for the Attestation Information
+2024-04-19 14:58:58.631 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AwaitingDe]
+2024-04-19 14:58:58.631 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57636i S:40649 M:263562828 (Ack:204566760)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.631 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562828 on secure session with LSID: 40649
+2024-04-19 14:58:58.631 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:204566760 on exchange 57636i
+2024-04-19 14:58:58.638 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57637i S:40649 M:204566761 (Ack:263562827)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.638 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57637i, Delegate: 0xb400007bca723c98
+2024-04-19 14:58:58.638 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:263562827 from Retrans Table on exchange 57637i
+2024-04-19 14:58:58.647 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57637i S:40649 M:204566762 (Ack:263562827)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 14:58:58.648 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57637i, Delegate: 0xb400007bca723c98
+2024-04-19 14:58:58.648 15415-15624 EM                      com.example.matterdemosampleapp      D  CHIP MessageCounter:263562827 not in RetransTable on exchange 57637i
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [ResponseRe]
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  InvokeResponseMessage =
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  	suppressResponse = false,
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InvokeResponseIBs =
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  		InvokeResponseIB =
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  			CommandDataIB =
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandPathIB =
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  					EndpointId = 0x0,
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  					ClusterId = 0x3e,
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  					CommandId = 0x1,
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandFields =
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x0 = [
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  							... (byte string too long) ...
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  					] (583 bytes)
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x1 = [
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  							0x81, 0x1b, 0x2b, 0xad, 0x08, 0xd5, 0xd9, 0x6e, 0x13, 0xd0, 0x67, 0xcc, 0xd5, 0x69, 0xa6, 0x65, 0x57, 0xc9, 0x1d, 0xe4, 0xd5, 0x11, 0xa4, 0xf9, 0x29, 0x07, 0xbd, 0x43, 0xcb, 0xab, 0xc9, 0x74, 0x58, 0x79, 0x84, 0x34, 0xc4, 0xaf, 0x95, 0xa5, 0x4f, 0x
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  					] (64 bytes)
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.648 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.649 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.649 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.649 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.649 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:58:58.649 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.649 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:58:58.649 15415-15624 DMG                     com.example.matterdemosampleapp      D  },
+2024-04-19 14:58:58.649 15415-15624 DMG                     com.example.matterdemosampleapp      D  Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0001
+2024-04-19 14:58:58.649 15415-15624 CTL                     com.example.matterdemosampleapp      D  Received Attestation Information from the device
+2024-04-19 14:58:58.650 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [SendAttestationRequest]  errorCode [0]
+2024-04-19 14:58:58.650 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'SendAttestationRequest'
+2024-04-19 14:58:58.650 15415-15624 CTL                     com.example.matterdemosampleapp      D  AutoCommissioner setting attestationElements buffer size 583/583
+2024-04-19 14:58:58.650 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'SendAttestationRequest' -> 'AttestationVerification'
+2024-04-19 14:58:58.650 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'AttestationVerification'
+2024-04-19 14:58:58.650 15415-15624 CTL                     com.example.matterdemosampleapp      D  Verifying attestation
+2024-04-19 14:58:58.682 15415-15624 CR                      com.example.matterdemosampleapp      E  mbedTLS error: ERROR - Generic error
+2024-04-19 14:58:58.708 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully validated 'Attestation Information' command received from the device.
+2024-04-19 14:58:58.709 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [AttestationVerification]  errorCode [0]
+2024-04-19 14:58:58.709 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'AttestationVerification'
+2024-04-19 14:58:58.709 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'AttestationVerification' -> 'SendOpCertSigningRequest'
+2024-04-19 14:58:58.709 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'SendOpCertSigningRequest'
+2024-04-19 14:58:58.709 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sending CSR request to 0xb400007d3a738098 device
+2024-04-19 14:58:58.709 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddingComm]
+2024-04-19 14:58:58.709 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddedComma]
+2024-04-19 14:58:58.709 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57638i S:40649 M:263562829] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 14:58:58.709 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562829 on secure session with LSID: 40649
+2024-04-19 14:58:58.709 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [CommandSen]
+2024-04-19 14:58:58.709 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sent CSR request, waiting for the CSR
+2024-04-19 14:58:58.709 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AwaitingDe]
+2024-04-19 14:58:58.709 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57637i S:40649 M:263562830 (Ack:204566762)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.709 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562830 on secure session with LSID: 40649
+2024-04-19 14:58:58.709 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:204566762 on exchange 57637i
+2024-04-19 14:58:58.741 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57638i S:40649 M:204566763 (Ack:263562829)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.741 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57638i, Delegate: 0xb400007bca7248f8
+2024-04-19 14:58:58.741 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:263562829 from Retrans Table on exchange 57638i
+2024-04-19 14:58:58.752 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57638i S:40649 M:204566764 (Ack:263562829)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 14:58:58.752 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57638i, Delegate: 0xb400007bca7248f8
+2024-04-19 14:58:58.752 15415-15624 EM                      com.example.matterdemosampleapp      D  CHIP MessageCounter:263562829 not in RetransTable on exchange 57638i
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [ResponseRe]
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  InvokeResponseMessage =
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  	suppressResponse = false,
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InvokeResponseIBs =
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  		InvokeResponseIB =
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  			CommandDataIB =
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandPathIB =
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  					EndpointId = 0x0,
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  					ClusterId = 0x3e,
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  					CommandId = 0x5,
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandFields =
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x0 = [
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  							0x15, 0x30, 0x01, 0xca, 0x30, 0x81, 0xc7, 0x30, 0x70, 0x02, 0x01, 0x00, 0x30, 0x0e, 0x31, 0x0c, 0x30, 0x0a, 0x06, 0x03, 0x55, 0x04, 0x0a, 0x0c, 0x03, 0x43, 0x53, 0x52, 0x30, 0x59, 0x30, 0x13, 0x06, 0x07, 0x2a, 0x86, 0x48, 0xce, 0x3d, 0x02, 0x01, 0x
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  					] (242 bytes)
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x1 = [
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  							0x98, 0x04, 0x6e, 0x2c, 0x11, 0xda, 0x36, 0x83, 0x48, 0xec, 0xf0, 0x3f, 0x50, 0xdc, 0x8e, 0xe2, 0x08, 0x88, 0x0f, 0xdd, 0xa5, 0xd7, 0x6b, 0x57, 0x44, 0x4d, 0x08, 0x29, 0xf1, 0x39, 0x56, 0x85, 0xdb, 0xc0, 0xa9, 0xb8, 0xb5, 0xf9, 0x13, 0xf4, 0xf3, 0x
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  					] (64 bytes)
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.752 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.753 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.753 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.753 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:58:58.753 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.753 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:58:58.753 15415-15624 DMG                     com.example.matterdemosampleapp      D  },
+2024-04-19 14:58:58.753 15415-15624 DMG                     com.example.matterdemosampleapp      D  Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0005
+2024-04-19 14:58:58.753 15415-15624 CTL                     com.example.matterdemosampleapp      D  Received certificate signing request from the device
+2024-04-19 14:58:58.753 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [SendOpCertSigningRequest]  errorCode [0]
+2024-04-19 14:58:58.753 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'SendOpCertSigningRequest'
+2024-04-19 14:58:58.753 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'SendOpCertSigningRequest' -> 'ValidateCSR'
+2024-04-19 14:58:58.753 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'ValidateCSR'
+2024-04-19 14:58:58.780 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [ValidateCSR]  errorCode [0]
+2024-04-19 14:58:58.780 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'ValidateCSR'
+2024-04-19 14:58:58.780 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'ValidateCSR' -> 'GenerateNOCChain'
+2024-04-19 14:58:58.780 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'GenerateNOCChain'
+2024-04-19 14:58:58.780 15415-15624 CTL                     com.example.matterdemosampleapp      D  Getting certificate chain for the device from the issuer
+2024-04-19 14:58:58.789 15415-15624 TOO                     com.example.matterdemosampleapp      D  VerifyCertificateSigningRequest
+2024-04-19 14:58:58.789 15415-15624 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key AndroidCARootCert1
+2024-04-19 14:58:58.789 15415-15624 CTL                     com.example.matterdemosampleapp      D  Generating NOC
+2024-04-19 14:58:58.794 15415-15624 CTL                     com.example.matterdemosampleapp      D  Received callback from the CA for NOC Chain generation. Status ../../src/controller/java/AndroidOperationalCredentialsIssuer.cpp:395: Success
+2024-04-19 14:58:58.794 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [GenerateNOCChain]  errorCode [0]
+2024-04-19 14:58:58.794 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'GenerateNOCChain'
+2024-04-19 14:58:58.794 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'SendTrustedRootCert'
+2024-04-19 14:58:58.794 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sending root certificate to the device
+2024-04-19 14:58:58.794 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddingComm]
+2024-04-19 14:58:58.794 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddedComma]
+2024-04-19 14:58:58.794 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57639i S:40649 M:263562831] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 14:58:58.794 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562831 on secure session with LSID: 40649
+2024-04-19 14:58:58.794 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [CommandSen]
+2024-04-19 14:58:58.794 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sent root certificate to the device
+2024-04-19 14:58:58.795 15415-15624 >>//                    com.example.matterdemosampleapp      D  BaseCompletionListener onOpCSRGenerationComplete() csr [[B@178749c]
+2024-04-19 14:58:58.795 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AwaitingDe]
+2024-04-19 14:58:58.795 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57638i S:40649 M:263562832 (Ack:204566764)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.795 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562832 on secure session with LSID: 40649
+2024-04-19 14:58:58.795 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:204566764 on exchange 57638i
+2024-04-19 14:58:58.830 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57639i S:40649 M:204566765 (Ack:263562831)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.830 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57639i, Delegate: 0xb400007bca723c98
+2024-04-19 14:58:58.830 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:263562831 from Retrans Table on exchange 57639i
+2024-04-19 14:58:58.830 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57639i S:40649 M:204566766 (Ack:263562831)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 14:58:58.830 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57639i, Delegate: 0xb400007bca723c98
+2024-04-19 14:58:58.830 15415-15624 EM                      com.example.matterdemosampleapp      D  CHIP MessageCounter:263562831 not in RetransTable on exchange 57639i
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [ResponseRe]
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  InvokeResponseMessage =
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  	suppressResponse = false,
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InvokeResponseIBs =
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  		InvokeResponseIB =
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  			CommandStatusIB =
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandPathIB =
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  					EndpointId = 0x0,
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  					ClusterId = 0x3e,
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  					CommandId = 0xb,
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.830 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  				StatusIB =
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  					status = 0x00,
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  },
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  Received Command Response Status for Endpoint=0 Cluster=0x0000_003E Command=0x0000_000B Status=0x0
+2024-04-19 14:58:58.831 15415-15624 CTL                     com.example.matterdemosampleapp      D  Device confirmed that it has received the root certificate
+2024-04-19 14:58:58.831 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [SendTrustedRootCert]  errorCode [0]
+2024-04-19 14:58:58.831 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'SendTrustedRootCert'
+2024-04-19 14:58:58.831 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'SendTrustedRootCert' -> 'SendNOC'
+2024-04-19 14:58:58.831 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'SendNOC'
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddingComm]
+2024-04-19 14:58:58.831 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddedComma]
+2024-04-19 14:58:58.831 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57640i S:40649 M:263562833] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 14:58:58.831 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562833 on secure session with LSID: 40649
+2024-04-19 14:58:58.832 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [CommandSen]
+2024-04-19 14:58:58.832 15415-15624 CTL                     com.example.matterdemosampleapp      D  Sent operational certificate to the device
+2024-04-19 14:58:58.832 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AwaitingDe]
+2024-04-19 14:58:58.832 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57639i S:40649 M:263562834 (Ack:204566766)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.832 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562834 on secure session with LSID: 40649
+2024-04-19 14:58:58.832 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:204566766 on exchange 57639i
+2024-04-19 14:58:58.842 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57640i S:40649 M:204566767 (Ack:263562833)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.842 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57640i, Delegate: 0xb400007bca7248f8
+2024-04-19 14:58:58.842 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:263562833 from Retrans Table on exchange 57640i
+2024-04-19 14:58:58.855 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57640i S:40649 M:204566768 (Ack:263562833)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 14:58:58.855 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57640i, Delegate: 0xb400007bca7248f8
+2024-04-19 14:58:58.855 15415-15624 EM                      com.example.matterdemosampleapp      D  CHIP MessageCounter:263562833 not in RetransTable on exchange 57640i
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [ResponseRe]
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  InvokeResponseMessage =
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  	suppressResponse = false,
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InvokeResponseIBs =
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  		InvokeResponseIB =
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  			CommandDataIB =
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandPathIB =
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  					EndpointId = 0x0,
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  					ClusterId = 0x3e,
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  					CommandId = 0x8,
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandFields =
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x0 = 0,
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x1 = 2,
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.855 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:58:58.856 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.856 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:58:58.856 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:58:58.856 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:58:58.856 15415-15624 DMG                     com.example.matterdemosampleapp      D  },
+2024-04-19 14:58:58.856 15415-15624 DMG                     com.example.matterdemosampleapp      D  Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0008
+2024-04-19 14:58:58.856 15415-15624 CTL                     com.example.matterdemosampleapp      D  Device returned status 0 on receiving the NOC
+2024-04-19 14:58:58.856 15415-15624 CTL                     com.example.matterdemosampleapp      D  Operational credentials provisioned on device 0xb400007d3a738098
+2024-04-19 14:58:58.856 15415-15624 >>//                    com.example.matterdemosampleapp      D  BaseCompletionListener onStatusUpdate(): status [0]
+2024-04-19 14:58:58.856 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [SendNOC]  errorCode [0]
+2024-04-19 14:58:58.856 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'SendNOC'
+2024-04-19 14:58:58.856 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'SendNOC' -> 'FindOperational'
+2024-04-19 14:58:58.856 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'FindOperational'
+2024-04-19 14:58:58.856 15415-15624 CSM                     com.example.matterdemosampleapp      D  FindOrEstablishSession: PeerId = [1:7B0848B725228518]
+2024-04-19 14:58:58.856 15415-15624 CSM                     com.example.matterdemosampleapp      D  FindOrEstablishSession: No existing OperationalSessionSetup instance found
+2024-04-19 14:58:58.856 15415-15624 DIS                     com.example.matterdemosampleapp      D  OperationalSessionSetup[1:7B0848B725228518]: State change 1 --> 2
+2024-04-19 14:58:58.856 15415-15624 DIS                     com.example.matterdemosampleapp      D  Resolving C8478D698D5A7A63:7B0848B725228518 ...
+2024-04-19 14:58:58.857 15415-15624 NsdManager...ceResolver com.example.matterdemosampleapp      D  resolve: Starting service resolution for 'C8478D698D5A7A63-7B0848B725228518' type '_matter._tcp'
+2024-04-19 14:58:58.862 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AwaitingDe]
+2024-04-19 14:58:58.862 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57640i S:40649 M:263562835 (Ack:204566768)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:58:58.862 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 263562835 on secure session with LSID: 40649
+2024-04-19 14:58:58.863 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:204566768 on exchange 57640i
+2024-04-19 14:58:58.867 15415-15622 NsdService...ndResolver com.example.matterdemosampleapp      D  Service discovery started. regType: _matter._tcp
+2024-04-19 14:58:58.879 15415-15622 NsdService...ndResolver com.example.matterdemosampleapp      D  onServiceFound: found service not a target for resolution, ignoring name: EDEF766E9DC51421-A7DD5A25197009B8, type: _matter._tcp., subtypes: _IEDEF766E9DC51421, hostAddresses: , port: 0, network: 108, txtRecord:
+2024-04-19 14:58:59.057 15415-15624 DIS                     com.example.matterdemosampleapp      D  Checking node lookup status after 201 ms
+2024-04-19 14:58:59.767 15415-15622 NsdService...ndResolver com.example.matterdemosampleapp      D  onServiceFound: found target service name: C8478D698D5A7A63-7B0848B725228518, type: _matter._tcp., subtypes: _IC8478D698D5A7A63, hostAddresses: , port: 0, network: 108, txtRecord:
+2024-04-19 14:58:59.789 15415-15622 NsdService...ndResolver com.example.matterdemosampleapp      I  Discovery stopped: _matter._tcp
+2024-04-19 14:58:59.979 15415-15622 NsdService...ndResolver com.example.matterdemosampleapp      I  Resolved service 'C8478D698D5A7A63-7B0848B725228518' to /fe80::100e:fdb0:e58f:5d2%wlan0
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D   ----- entry [0] : T 1
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D  Node ID resolved for C8478D698D5A7A63:7B0848B725228518
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D  	Hostname: fe80::100e:fdb0:
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D  	IP Address #1: fe80::100e:fdb0:e58f:5d2
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D  	Port: 5540
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D  	Mrp Interval idle: not present
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D  	Mrp Interval active: not present
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D  	TCP Supported: 1
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D  UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540: new best score: 3
+2024-04-19 14:58:59.984 15415-15622 DIS                     com.example.matterdemosampleapp      D  Checking node lookup status after 1128 ms
+2024-04-19 14:58:59.985 15415-15622 DIS                     com.example.matterdemosampleapp      D  OperationalSessionSetup[1:7B0848B725228518]: Updating device address to UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540 while in state 2
+2024-04-19 14:58:59.985 15415-15622 DIS                     com.example.matterdemosampleapp      D  OperationalSessionSetup[1:7B0848B725228518]: State change 2 --> 3
+2024-04-19 14:58:59.985 15415-15622 IN                      com.example.matterdemosampleapp      D  SecureSession[0xb400007caa724ac8]: Allocated Type:2 LSID:40650
+2024-04-19 14:58:59.985 15415-15622 SC                      com.example.matterdemosampleapp      D  Initiating session on local FabricIndex 1 from 0x000000000001B669 -> 0x7B0848B725228518
+2024-04-19 14:59:00.005 15415-15622 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/g
+2024-04-19 14:59:00.006 15415-15622 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/k/0
+2024-04-19 14:59:00.006 15415-15622 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/s/7B0848B725228518
+2024-04-19 14:59:00.007 15415-15622 KeyValueStoreManager    com.example.matterdemosampleapp      D  Key 'f/1/s/7B0848B725228518' not found in shared preferences
+2024-04-19 14:59:00.007 15415-15622 EM                      com.example.matterdemosampleapp      D  <<< [E:57641i S:0 M:88419852] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:30 (SecureChannel:CASE_Sigma1)
+2024-04-19 14:59:00.007 15415-15622 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419852 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540'
+2024-04-19 14:59:00.008 15415-15622 SC                      com.example.matterdemosampleapp      D  Sent Sigma1 msg
+2024-04-19 14:59:00.008 15415-15622 DIS                     com.example.matterdemosampleapp      D  OperationalSessionSetup[1:7B0848B725228518]: State change 3 --> 4
+2024-04-19 14:59:00.033 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57641i S:0 M:26015910 (Ack:88419852)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:31 (SecureChannel:CASE_Sigma2)
+2024-04-19 14:59:00.034 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57641i, Delegate: 0xb400007c9a704588
+2024-04-19 14:59:00.034 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:88419852 from Retrans Table on exchange 57641i
+2024-04-19 14:59:00.034 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57641i S:0 M:88419853 (Ack:26015910)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:59:00.034 15415-15624 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419853 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540'
+2024-04-19 14:59:00.034 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:26015910 on exchange 57641i
+2024-04-19 14:59:00.034 15415-15624 SC                      com.example.matterdemosampleapp      D  Received Sigma2 msg
+2024-04-19 14:59:00.034 15415-15624 SC                      com.example.matterdemosampleapp      D  Peer assigned session session ID 41565
+2024-04-19 14:59:00.052 15415-15624 SC                      com.example.matterdemosampleapp      E  The device does not support GetClock_RealTimeMS() API: ../../src/system/SystemClock.cpp:92: CHIP Error 0x0000006C: Required feature not supported by this configuration.  Falling back to Last Known Good UTC Time
+2024-04-19 14:59:00.053 15415-15624 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/r
+2024-04-19 14:59:00.078 15415-15624 SC                      com.example.matterdemosampleapp      D  Sending Sigma3
+2024-04-19 14:59:00.078 15415-15624 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/i
+2024-04-19 14:59:00.078 15415-15624 KeyValueStoreManager    com.example.matterdemosampleapp      D  Key 'f/1/i' not found in shared preferences
+2024-04-19 14:59:00.078 15415-15624 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/n
+2024-04-19 14:59:00.079 15415-15624 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key f/1/n
+2024-04-19 14:59:00.083 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57641i S:0 M:88419854 (Ack:26015910)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:32 (SecureChannel:CASE_Sigma3)
+2024-04-19 14:59:00.083 15415-15624 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419854 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540'
+2024-04-19 14:59:00.083 15415-15624 SC                      com.example.matterdemosampleapp      D  Sent Sigma3 msg
+2024-04-19 14:59:00.168 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57641i S:0 M:26015911 (Ack:88419854)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+2024-04-19 14:59:00.168 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57641i, Delegate: 0xb400007c9a704588
+2024-04-19 14:59:00.168 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:88419854 from Retrans Table on exchange 57641i
+2024-04-19 14:59:00.168 15415-15624 SC                      com.example.matterdemosampleapp      D  Success status report received. Session was established
+2024-04-19 14:59:00.168 15415-15624 TOO                     com.example.matterdemosampleapp      D  KVS: Getting key g/sri
+2024-04-19 14:59:00.168 15415-15624 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key f/1/s/7B0848B725228518
+2024-04-19 14:59:00.169 15415-15624 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key g/s/NoEP7YByqdhaWSWsHtZfzg==
+2024-04-19 14:59:00.169 15415-15624 TOO                     com.example.matterdemosampleapp      D  KVS: Setting key g/sri
+2024-04-19 14:59:00.170 15415-15624 SC                      com.example.matterdemosampleapp      D  SecureSession[0xb400007caa724ac8]: Moving from state 'kEstablishing' --> 'kActive'
+2024-04-19 14:59:00.170 15415-15624 IN                      com.example.matterdemosampleapp      D  SecureSession[0xb400007caa724ac8]: Activated - Type:2 LSID:40650
+2024-04-19 14:59:00.170 15415-15624 IN                      com.example.matterdemosampleapp      D  New secure session activated for device <7B0848B725228518, 1>, LSID:40650 PSID:41565!
+2024-04-19 14:59:00.170 15415-15624 DIS                     com.example.matterdemosampleapp      D  OperationalSessionSetup[1:7B0848B725228518]: State change 4 --> 5
+2024-04-19 14:59:00.170 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [FindOperational]  errorCode [0]
+2024-04-19 14:59:00.170 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'FindOperational'
+2024-04-19 14:59:00.170 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'FindOperational' -> 'SendComplete'
+2024-04-19 14:59:00.170 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'SendComplete'
+2024-04-19 14:59:00.170 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddingComm]
+2024-04-19 14:59:00.170 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AddedComma]
+2024-04-19 14:59:00.170 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57642i S:40650 M:243319231] (S) Msg TX to 1:7B0848B725228518 [7A63] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 14:59:00.170 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 243319231 on secure session with LSID: 40650
+2024-04-19 14:59:00.171 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [CommandSen]
+2024-04-19 14:59:00.171 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57641i S:0 M:88419855 (Ack:26015911)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:59:00.171 15415-15624 IN                      com.example.matterdemosampleapp      D  (U) Sending msg 88419855 to IP address 'UDP:[fe80::100e:fdb0:e58f:5d2%wlan0]:5540'
+2024-04-19 14:59:00.171 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:26015911 on exchange 57641i
+2024-04-19 14:59:00.186 15415-15624 EM                      com.example.matterdemosampleapp      D  >>> [E:57642i S:40650 M:64125184 (Ack:243319231)] (S) Msg RX from 1:7B0848B725228518 [7A63] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 14:59:00.186 15415-15624 EM                      com.example.matterdemosampleapp      D  Found matching exchange: 57642i, Delegate: 0xb400007bca708cd8
+2024-04-19 14:59:00.186 15415-15624 EM                      com.example.matterdemosampleapp      D  Rxd Ack; Removing MessageCounter:243319231 from Retrans Table on exchange 57642i
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [ResponseRe]
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  InvokeResponseMessage =
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  {
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  	suppressResponse = false,
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InvokeResponseIBs =
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  	[
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  		InvokeResponseIB =
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  		{
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  			CommandDataIB =
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  			{
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandPathIB =
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  					EndpointId = 0x0,
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  					ClusterId = 0x30,
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  					CommandId = 0x5,
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  				CommandFields =
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  				{
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x0 = 0,
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  					0x1 = "" (0 chars),
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  				},
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  			},
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  		},
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  	],
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  	InteractionModelRevision = 11
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  },
+2024-04-19 14:59:00.186 15415-15624 DMG                     com.example.matterdemosampleapp      D  Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0005
+2024-04-19 14:59:00.186 15415-15624 CTL                     com.example.matterdemosampleapp      D  Received CommissioningComplete response, errorCode=0
+2024-04-19 14:59:00.187 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [SendComplete]  errorCode [0]
+2024-04-19 14:59:00.187 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'SendComplete'
+2024-04-19 14:59:00.187 15415-15624 CTL                     com.example.matterdemosampleapp      D  Commissioning stage next step: 'SendComplete' -> 'Cleanup'
+2024-04-19 14:59:00.187 15415-15624 CTL                     com.example.matterdemosampleapp      D  Performing next commissioning step 'Cleanup'
+2024-04-19 14:59:00.187 15415-15624 IN                      com.example.matterdemosampleapp      D  SecureSession[0xb400007caa7249d8]: MarkForEviction Type:1 LSID:40649
+2024-04-19 14:59:00.187 15415-15624 SC                      com.example.matterdemosampleapp      D  SecureSession[0xb400007caa7249d8]: Moving from state 'kActive' --> 'kPendingEviction'
+2024-04-19 14:59:00.187 15415-15624 IN                      com.example.matterdemosampleapp      D  SecureSession[0xb400007caa7249d8]: Released - Type:1 LSID:40649
+2024-04-19 14:59:00.187 15415-15624 >>//                    com.example.matterdemosampleapp      D  onCommissioningStatusUpdate nodeId [8865415817918055704]  stage [Cleanup]  errorCode [0]
+2024-04-19 14:59:00.187 15415-15624 CTL                     com.example.matterdemosampleapp      D  Successfully finished commissioning step 'Cleanup'
+2024-04-19 14:59:00.187 15415-15624 >>//                    com.example.matterdemosampleapp      D  BaseCompletionListener onCommissioningComplete(): nodeId [8865415817918055704] errorCode [0]
+2024-04-19 14:59:00.188 15415-15624 DMG                     com.example.matterdemosampleapp      D  ICR moving to [AwaitingDe]
+2024-04-19 14:59:00.188 15415-15624 EM                      com.example.matterdemosampleapp      D  <<< [E:57642i S:40650 M:243319232 (Ack:64125184)] (S) Msg TX to 1:7B0848B725228518 [7A63] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 14:59:00.188 15415-15624 IN                      com.example.matterdemosampleapp      D  (S) Sending msg 243319232 on secure session with LSID: 40650
+2024-04-19 14:59:00.188 15415-15624 EM                      com.example.matterdemosampleapp      D  Flushed pending ack for MessageCounter:64125184 on exchange 57642i
+2024-04-19 14:59:00.189 15415-15415 >>//                    com.example.matterdemosampleapp      D  Commissioning: Calling commissioningServiceDelegate.sendCommissioningComplete()
+2024-04-19 14:59:00.195 15415-15415 >>//                    com.example.matterdemosampleapp      D  Commissioning: commissioningServiceDelegate.sendCommissioningComplete() succeeded
+2024-04-19 14:59:00.441 15415-15427 System                  com.example.matterdemosampleapp      W  A resource failed to call close.

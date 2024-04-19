@@ -1,0 +1,679 @@
+Installing profile for com.google.homesampleapp.default
+2024-04-19 18:20:59.633 31553-31753 GHSAFM-3p-...ingService com.google.homesampleapp.default     D  *** onCommissioningRequested ***:
+                                                                                                    	deviceDescriptor: deviceType [0] vendorId [4978] productId [1]
+                                                                                                    	networkLocation: IP address toString() [/192.168.0.2] IP address hostAddress [192.168.0.2] port [5540]
+                                                                                                    	passCode [25474665]
+2024-04-19 18:20:59.637 31553-31553 GHSAFM-3p-...gRequested com.google.homesampleapp.default     D  Commissioning: App fabric -> ChipClient.establishPaseConnection(): deviceId [6004988700462245529]
+2024-04-19 18:20:59.696 31553-31553 CTL                     com.google.homesampleapp.default     D  JNI_OnLoad() called
+2024-04-19 18:20:59.696 31553-31553 CTL                     com.google.homesampleapp.default     D  Loading Java class references.
+2024-04-19 18:20:59.696 31553-31553 CTL                     com.google.homesampleapp.default     D  Java class references loaded.
+2024-04-19 18:20:59.696 31553-31553 DL                      com.google.homesampleapp.default     D  AndroidChipPlatform JNI_OnLoad() called
+2024-04-19 18:20:59.696 31553-31553 SPT                     com.google.homesampleapp.default     E  JavaVM is already set
+2024-04-19 18:20:59.696 31553-31553 DL                      com.google.homesampleapp.default     D  Loading Java class references.
+2024-04-19 18:20:59.696 31553-31553 DL                      com.google.homesampleapp.default     D  Java class references loaded.
+2024-04-19 18:20:59.714 31553-31553 Compatibil...geReporter com.google.homesampleapp.default     D  Compat change id reported: 270306772; UID 11580; state: DISABLED
+2024-04-19 18:20:59.717 31553-31553 Compatibil...geReporter com.google.homesampleapp.default     D  Compat change id reported: 235355681; UID 11580; state: ENABLED
+2024-04-19 18:20:59.728 31553-31553 CTL                     com.google.homesampleapp.default     D  newDeviceController() called
+2024-04-19 18:20:59.728 31553-31553 CTL                     com.google.homesampleapp.default     D  Stopping commissioning discovery over DNS-SD
+2024-04-19 18:20:59.728 31553-31553 CTL                     com.google.homesampleapp.default     D  Setting attestation nonce to random value
+2024-04-19 18:20:59.728 31553-31553 CTL                     com.google.homesampleapp.default     D  Setting CSR nonce to random value
+2024-04-19 18:20:59.728 31553-31553 CTL                     com.google.homesampleapp.default     D  Setting attestation nonce to random value
+2024-04-19 18:20:59.728 31553-31553 CTL                     com.google.homesampleapp.default     D  Setting CSR nonce to random value
+2024-04-19 18:20:59.728 31553-31553 CTL                     com.google.homesampleapp.default     D  Setting attestation nonce from parameters
+2024-04-19 18:20:59.728 31553-31553 CTL                     com.google.homesampleapp.default     D  Setting CSR nonce from parameters
+2024-04-19 18:20:59.728 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key AndroidDeviceControllerKey
+2024-04-19 18:20:59.729 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'AndroidDeviceControllerKey' not found in shared preferences
+2024-04-19 18:20:59.746 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key AndroidDeviceControllerKey
+2024-04-19 18:20:59.747 31553-31553 CTL                     com.google.homesampleapp.default     D  No existing credentials provided: generating ephemeral local NOC chain with OperationalCredentialsIssuer
+2024-04-19 18:20:59.759 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key AndroidCARootCert1
+2024-04-19 18:20:59.759 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'AndroidCARootCert1' not found in shared preferences
+2024-04-19 18:20:59.759 31553-31553 CTL                     com.google.homesampleapp.default     D  Generating RCAC
+2024-04-19 18:20:59.768 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key AndroidCARootCert1
+2024-04-19 18:20:59.768 31553-31553 CTL                     com.google.homesampleapp.default     D  Generating NOC
+2024-04-19 18:20:59.773 31553-31553 IN                      com.google.homesampleapp.default     D  UDP::Init bind&listen port=0
+2024-04-19 18:20:59.773 31553-31553 IN                      com.google.homesampleapp.default     D  UDP::Init bound to port=37711
+2024-04-19 18:20:59.773 31553-31553 IN                      com.google.homesampleapp.default     D  UDP::Init bind&listen port=0
+2024-04-19 18:20:59.773 31553-31553 IN                      com.google.homesampleapp.default     D  UDP::Init bound to port=46836
+2024-04-19 18:20:59.773 31553-31553 IN                      com.google.homesampleapp.default     D  BLEBase::Init - setting/overriding transport
+2024-04-19 18:20:59.773 31553-31553 IN                      com.google.homesampleapp.default     D  TransportMgr initialized
+2024-04-19 18:20:59.774 31553-31553 FP                      com.google.homesampleapp.default     D  Initializing FabricTable from persistent storage
+2024-04-19 18:20:59.774 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key g/lkgt
+2024-04-19 18:20:59.774 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'g/lkgt' not found in shared preferences
+2024-04-19 18:20:59.774 31553-31553 TS                      com.google.homesampleapp.default     D  Last Known Good Time: [unknown]
+2024-04-19 18:20:59.774 31553-31553 TS                      com.google.homesampleapp.default     D  Setting Last Known Good Time to firmware build time 2023-03-10T14:08:00
+2024-04-19 18:20:59.774 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key g/lkgt
+2024-04-19 18:20:59.774 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key g/fidx
+2024-04-19 18:20:59.774 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'g/fidx' not found in shared preferences
+2024-04-19 18:20:59.774 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key g/fs/c
+2024-04-19 18:20:59.774 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'g/fs/c' not found in shared preferences
+2024-04-19 18:20:59.774 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key g/gcc
+2024-04-19 18:20:59.774 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'g/gcc' not found in shared preferences
+2024-04-19 18:20:59.774 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key g/gdc
+2024-04-19 18:20:59.774 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'g/gdc' not found in shared preferences
+2024-04-19 18:20:59.774 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key g/gcc
+2024-04-19 18:20:59.774 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key g/gdc
+2024-04-19 18:20:59.774 31553-31553 ZCL                     com.google.homesampleapp.default     D  Using ZAP configuration...
+2024-04-19 18:20:59.775 31553-31553 CTL                     com.google.homesampleapp.default     D  System State Initialized...
+2024-04-19 18:20:59.775 31553-31553 CTL                     com.google.homesampleapp.default     D  Intermediate CA is not needed
+2024-04-19 18:20:59.775 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key f/1/r
+2024-04-19 18:20:59.775 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'f/1/r' not found in shared preferences
+2024-04-19 18:20:59.775 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key f/1/n
+2024-04-19 18:20:59.775 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'f/1/n' not found in shared preferences
+2024-04-19 18:20:59.775 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key f/1/i
+2024-04-19 18:20:59.775 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'f/1/i' not found in shared preferences
+2024-04-19 18:20:59.775 31553-31553 FP                      com.google.homesampleapp.default     D  Validating NOC chain
+2024-04-19 18:20:59.784 31553-31553 FP                      com.google.homesampleapp.default     D  NOC chain validation successful
+2024-04-19 18:20:59.785 31553-31553 FP                      com.google.homesampleapp.default     D  Added new fabric at index: 0x1
+2024-04-19 18:20:59.785 31553-31553 FP                      com.google.homesampleapp.default     D  Assigned compressed fabric ID: 0x62E89A61DF1447FB, node ID: 0x000000000001B669
+2024-04-19 18:20:59.785 31553-31553 TS                      com.google.homesampleapp.default     D  Last Known Good Time: 2023-03-10T14:08:00
+2024-04-19 18:20:59.785 31553-31553 TS                      com.google.homesampleapp.default     D  New proposed Last Known Good Time: 2021-06-10T00:00:00
+2024-04-19 18:20:59.785 31553-31553 TS                      com.google.homesampleapp.default     D  Retaining current Last Known Good Time
+2024-04-19 18:20:59.785 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key g/sri
+2024-04-19 18:20:59.785 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'g/sri' not found in shared preferences
+2024-04-19 18:20:59.788 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key g/fs/c
+2024-04-19 18:20:59.790 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key f/1/m
+2024-04-19 18:20:59.791 31553-31553 FP                      com.google.homesampleapp.default     D  Metadata for Fabric 0x1 persisted to storage.
+2024-04-19 18:20:59.791 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key f/1/n
+2024-04-19 18:20:59.791 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Deleting key f/1/i
+2024-04-19 18:20:59.791 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key f/1/r
+2024-04-19 18:20:59.791 31553-31553 TS                      com.google.homesampleapp.default     D  Committing Last Known Good Time to storage: 2023-03-10T14:08:00
+2024-04-19 18:20:59.791 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key g/lkgt
+2024-04-19 18:20:59.791 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key g/fidx
+2024-04-19 18:20:59.791 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Deleting key g/fs/c
+2024-04-19 18:20:59.791 31553-31553 CTL                     com.google.homesampleapp.default     D  Joined the fabric at index 1. Fabric ID is 0x0000000000000001 (Compressed Fabric ID: 62E89A61DF1447FB)
+2024-04-19 18:20:59.791 31553-31553 CTL                     com.google.homesampleapp.default     D  *** Missing DeviceAttestationVerifier configuration at DeviceCommissioner init: using global default, consider passing one in CommissionerInitParams.
+2024-04-19 18:20:59.791 31553-31553 CTL                     com.google.homesampleapp.default     D  Setting up group data for Fabric Index 1 with Compressed Fabric ID:
+2024-04-19 18:20:59.791 31553-31553 SPT                     com.google.homesampleapp.default     D  0x62, 0xe8, 0x9a, 0x61, 0xdf, 0x14, 0x47, 0xfb,
+2024-04-19 18:20:59.791 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key f/1/g
+2024-04-19 18:20:59.791 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'f/1/g' not found in shared preferences
+2024-04-19 18:20:59.792 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key f/1/k/0
+2024-04-19 18:20:59.792 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Getting key g/gfl
+2024-04-19 18:20:59.792 31553-31553 KeyValueStoreManager    com.google.homesampleapp.default     D  Key 'g/gfl' not found in shared preferences
+2024-04-19 18:20:59.792 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key g/gfl
+2024-04-19 18:20:59.792 31553-31553 TOO                     com.google.homesampleapp.default     D  KVS: Setting key f/1/g
+2024-04-19 18:20:59.792 31553-31758 CTL                     com.google.homesampleapp.default     D  IO thread starting
+2024-04-19 18:20:59.792 31553-31758 DL                      com.google.homesampleapp.default     D  _OnPlatformEvent
+2024-04-19 18:20:59.793 31553-31553 ChipDeviceController    com.google.homesampleapp.default     D  Establishing PASE connection with ID: 6004988700462245529
+2024-04-19 18:20:59.793 31553-31553 IN                      com.google.homesampleapp.default     D  SecureSession[0xb400007caa740658]: Allocated Type:1 LSID:22019
+2024-04-19 18:20:59.793 31553-31553 SC                      com.google.homesampleapp.default     D  Assigned local session key ID 22019
+2024-04-19 18:20:59.793 31553-31553 EM                      com.google.homesampleapp.default     D  <<< [E:27988i S:0 M:74628906] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:20 (SecureChannel:PBKDFParamRequest)
+2024-04-19 18:20:59.793 31553-31553 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628906 to IP address 'UDP:192.168.0.2:5540'
+2024-04-19 18:20:59.793 31553-31553 SC                      com.google.homesampleapp.default     D  Sent PBKDF param request
+2024-04-19 18:21:00.177 31553-31758 EM                      com.google.homesampleapp.default     D  Retransmitting MessageCounter:74628906 on exchange 27988i Send Cnt 1
+2024-04-19 18:21:00.177 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628906 to IP address 'UDP:192.168.0.2:5540'
+2024-04-19 18:21:00.553 31553-31758 EM                      com.google.homesampleapp.default     D  Retransmitting MessageCounter:74628906 on exchange 27988i Send Cnt 2
+2024-04-19 18:21:00.553 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628906 to IP address 'UDP:192.168.0.2:5540'
+2024-04-19 18:21:01.201 31553-31758 EM                      com.google.homesampleapp.default     D  Retransmitting MessageCounter:74628906 on exchange 27988i Send Cnt 3
+2024-04-19 18:21:01.201 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628906 to IP address 'UDP:192.168.0.2:5540'
+2024-04-19 18:21:02.086 31553-31758 EM                      com.google.homesampleapp.default     D  Retransmitting MessageCounter:74628906 on exchange 27988i Send Cnt 4
+2024-04-19 18:21:02.086 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628906 to IP address 'UDP:192.168.0.2:5540'
+2024-04-19 18:21:03.010 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583820 (Ack:74628906)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.011 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.011 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:74628906 from Retrans Table on exchange 27988i
+2024-04-19 18:21:03.011 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583821 (Ack:74628906)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)
+2024-04-19 18:21:03.011 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.011 31553-31758 EM                      com.google.homesampleapp.default     D  CHIP MessageCounter:74628906 not in RetransTable on exchange 27988i
+2024-04-19 18:21:03.011 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27988i S:0 M:74628907 (Ack:216583821)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.012 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628907 to IP address 'UDP:192.168.0.2%wlan0:5540'
+2024-04-19 18:21:03.013 31553-31758 EM                      com.google.homesampleapp.default     D  Flushed pending ack for MessageCounter:216583821 on exchange 27988i
+2024-04-19 18:21:03.013 31553-31758 SC                      com.google.homesampleapp.default     D  Received PBKDF param response
+2024-04-19 18:21:03.013 31553-31758 SC                      com.google.homesampleapp.default     D  Peer assigned session ID 4122
+2024-04-19 18:21:03.219 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27988i S:0 M:74628908 (Ack:216583821)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:22 (SecureChannel:PASE_Pake1)
+2024-04-19 18:21:03.219 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628908 to IP address 'UDP:192.168.0.2%wlan0:5540'
+2024-04-19 18:21:03.220 31553-31758 SC                      com.google.homesampleapp.default     D  Sent spake2p msg1
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583822 (Ack:74628906)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  CHIP MessageCounter:74628906 not in RetransTable on exchange 27988i
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583823 (Ack:74628906)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  CHIP MessageCounter:74628906 not in RetransTable on exchange 27988i
+2024-04-19 18:21:03.220 31553-31758 IN                      com.google.homesampleapp.default     D  Received a duplicate message with MessageCounter:216583821 on exchange 27988i
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583821 (Ack:74628906)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Forcing tx of solitary ack for duplicate MessageCounter:216583821 on exchange 27988i
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27988i S:0 M:74628909 (Ack:216583821)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.220 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628909 to IP address 'UDP:192.168.0.2%wlan0:5540'
+2024-04-19 18:21:03.220 31553-31758 IN                      com.google.homesampleapp.default     D  Received a duplicate message with MessageCounter:216583821 on exchange 27988i
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583821 (Ack:74628906)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Forcing tx of solitary ack for duplicate MessageCounter:216583821 on exchange 27988i
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27988i S:0 M:74628910 (Ack:216583821)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.220 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628910 to IP address 'UDP:192.168.0.2%wlan0:5540'
+2024-04-19 18:21:03.220 31553-31758 IN                      com.google.homesampleapp.default     D  Received a duplicate message with MessageCounter:216583821 on exchange 27988i
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583821 (Ack:74628906)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:21 (SecureChannel:PBKDFParamResponse)
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Forcing tx of solitary ack for duplicate MessageCounter:216583821 on exchange 27988i
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27988i S:0 M:74628911 (Ack:216583821)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.220 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628911 to IP address 'UDP:192.168.0.2%wlan0:5540'
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583824 (Ack:74628906)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  CHIP MessageCounter:74628906 not in RetransTable on exchange 27988i
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583825 (Ack:74628906)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.220 31553-31758 EM                      com.google.homesampleapp.default     D  CHIP MessageCounter:74628906 not in RetransTable on exchange 27988i
+2024-04-19 18:21:03.569 31553-31758 EM                      com.google.homesampleapp.default     D  Retransmitting MessageCounter:74628908 on exchange 27988i Send Cnt 1
+2024-04-19 18:21:03.569 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628908 to IP address 'UDP:192.168.0.2%wlan0:5540'
+2024-04-19 18:21:03.599 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583826 (Ack:74628908)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:03.599 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:03.599 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:74628908 from Retrans Table on exchange 27988i
+2024-04-19 18:21:04.230 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583827 (Ack:74628908)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:23 (SecureChannel:PASE_Pake2)
+2024-04-19 18:21:04.230 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:04.230 31553-31758 EM                      com.google.homesampleapp.default     D  CHIP MessageCounter:74628908 not in RetransTable on exchange 27988i
+2024-04-19 18:21:04.230 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27988i S:0 M:74628912 (Ack:216583827)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.231 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628912 to IP address 'UDP:192.168.0.2%wlan0:5540'
+2024-04-19 18:21:04.231 31553-31758 EM                      com.google.homesampleapp.default     D  Flushed pending ack for MessageCounter:216583827 on exchange 27988i
+2024-04-19 18:21:04.231 31553-31758 SC                      com.google.homesampleapp.default     D  Received spake2p msg2
+2024-04-19 18:21:04.265 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27988i S:0 M:74628913 (Ack:216583827)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:24 (SecureChannel:PASE_Pake3)
+2024-04-19 18:21:04.266 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628913 to IP address 'UDP:192.168.0.2%wlan0:5540'
+2024-04-19 18:21:04.266 31553-31758 SC                      com.google.homesampleapp.default     D  Sent spake2p msg3
+2024-04-19 18:21:04.266 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583828 (Ack:74628908)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.266 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:04.266 31553-31758 EM                      com.google.homesampleapp.default     D  CHIP MessageCounter:74628908 not in RetransTable on exchange 27988i
+2024-04-19 18:21:04.403 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583829 (Ack:74628913)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.403 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:04.403 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:74628913 from Retrans Table on exchange 27988i
+2024-04-19 18:21:04.403 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27988i S:0 M:216583830 (Ack:74628913)] (U) Msg RX from 0:0000000000000000 [0000] --- Type 0000:40 (SecureChannel:StatusReport)
+2024-04-19 18:21:04.403 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27988i, Delegate: 0xb400007d3a6e80c8
+2024-04-19 18:21:04.403 31553-31758 EM                      com.google.homesampleapp.default     D  CHIP MessageCounter:74628913 not in RetransTable on exchange 27988i
+2024-04-19 18:21:04.403 31553-31758 SC                      com.google.homesampleapp.default     D  SecureSession[0xb400007caa740658]: Moving from state 'kEstablishing' --> 'kActive'
+2024-04-19 18:21:04.403 31553-31758 IN                      com.google.homesampleapp.default     D  SecureSession[0xb400007caa740658]: Activated - Type:1 LSID:22019
+2024-04-19 18:21:04.403 31553-31758 IN                      com.google.homesampleapp.default     D  New secure session activated for device <FFFFFFFB00000000, 0>, LSID:22019 PSID:4122!
+2024-04-19 18:21:04.403 31553-31758 CTL                     com.google.homesampleapp.default     D  Remote device completed SPAKE2+ handshake
+2024-04-19 18:21:04.404 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  BaseCompletionListener onPairingComplete(): code [0]
+2024-04-19 18:21:04.404 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27988i S:0 M:74628914 (Ack:216583830)] (U) Msg TX to 0:0000000000000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.404 31553-31758 IN                      com.google.homesampleapp.default     D  (U) Sending msg 74628914 to IP address 'UDP:192.168.0.2%wlan0:5540'
+2024-04-19 18:21:04.405 31553-31758 EM                      com.google.homesampleapp.default     D  Flushed pending ack for MessageCounter:216583830 on exchange 27988i
+2024-04-19 18:21:04.405 31553-31553 GHSAFM-3p-...gRequested com.google.homesampleapp.default     D  Commissioning: App fabric -> ChipClient.commissionDevice(): deviceId [6004988700462245529]
+2024-04-19 18:21:04.406 31553-31553 CTL                     com.google.homesampleapp.default     D  commissionDevice() called
+2024-04-19 18:21:04.406 31553-31553 CTL                     com.google.homesampleapp.default     D  Setting attestation nonce from parameters
+2024-04-19 18:21:04.406 31553-31553 CTL                     com.google.homesampleapp.default     D  Setting CSR nonce from parameters
+2024-04-19 18:21:04.406 31553-31553 CTL                     com.google.homesampleapp.default     D  Commission called for node ID 0x5356016843496699
+2024-04-19 18:21:04.406 31553-31553 CTL                     com.google.homesampleapp.default     D  Commissioning stage next step: 'SecurePairing' -> 'ReadCommissioningInfo'
+2024-04-19 18:21:04.406 31553-31553 CTL                     com.google.homesampleapp.default     D  Performing next commissioning step 'ReadCommissioningInfo'
+2024-04-19 18:21:04.406 31553-31553 CTL                     com.google.homesampleapp.default     D  Sending request for commissioning information
+2024-04-19 18:21:04.406 31553-31553 DMG                     com.google.homesampleapp.default     D  SendReadRequest ReadClient[0xb400007bda721050]: Sending Read Request
+2024-04-19 18:21:04.406 31553-31553 EM                      com.google.homesampleapp.default     D  <<< [E:27989i S:22019 M:110979175] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:02 (IM:ReadRequest)
+2024-04-19 18:21:04.406 31553-31553 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979175 on secure session with LSID: 22019
+2024-04-19 18:21:04.406 31553-31553 DMG                     com.google.homesampleapp.default     D  MoveToState ReadClient[0xb400007bda721050]: Moving to [AwaitingIn]
+2024-04-19 18:21:04.463 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27989i S:22019 M:264326061 (Ack:110979175)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:05 (IM:ReportData)
+2024-04-19 18:21:04.463 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27989i, Delegate: 0xb400007bda721060
+2024-04-19 18:21:04.463 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:110979175 from Retrans Table on exchange 27989i
+2024-04-19 18:21:04.463 31553-31758 DMG                     com.google.homesampleapp.default     D  ReportDataMessage =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  {
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  	AttributeReportIBs =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  	[
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		AttributeReportIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			AttributeDataIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				DataVersion = 0x4c06fa18,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				AttributePathIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Endpoint = 0x0,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Cluster = 0x31,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Attribute = 0x0000_0003,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				}
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				Data = 30,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		AttributeReportIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			AttributeDataIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				DataVersion = 0x4e56348a,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				AttributePathIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Endpoint = 0x0,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Cluster = 0x28,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Attribute = 0x0000_0004,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				}
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				Data = 1,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		AttributeReportIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			AttributeDataIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				DataVersion = 0x4e56348a,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				AttributePathIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Endpoint = 0x0,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Cluster = 0x28,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Attribute = 0x0000_0002,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				}
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				Data = 4978,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		AttributeReportIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			AttributeDataIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				DataVersion = 0x5ec51a89,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				AttributePathIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Endpoint = 0x0,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Cluster = 0x30,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  					Attribute = 0x0000_0003,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				}
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  				Data = 0,
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		AttributeReportIB =
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.464 31553-31758 DMG                     com.google.homesampleapp.default     D  			AttributeDataIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				DataVersion = 0x5ec51a89,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				AttributePathIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Endpoint = 0x0,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Cluster = 0x30,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Attribute = 0x0000_0002,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				}
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				Data = 0,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		AttributeReportIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			AttributeDataIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				DataVersion = 0x5ec51a89,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				AttributePathIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Endpoint = 0x0,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Cluster = 0x30,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Attribute = 0x0000_0001,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				}
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				Data =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x0 = 60,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x1 = 900,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		AttributeReportIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			AttributeDataIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				DataVersion = 0x5ec51a89,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				AttributePathIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Endpoint = 0x0,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Cluster = 0x30,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Attribute = 0x0000_0000,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				}
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				Data = 0,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		AttributeReportIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			AttributeDataIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				DataVersion = 0x4c06fa18,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				AttributePathIB =
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Endpoint = 0x0,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Cluster = 0x31,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  					Attribute = 0x0000_FFFC,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				}
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  				Data = 1,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  	],
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  	SuppressResponse = true,
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  	InteractionModelRevision = 1
+2024-04-19 18:21:04.465 31553-31758 DMG                     com.google.homesampleapp.default     D  }
+2024-04-19 18:21:04.474 31553-31758 CTL                     com.google.homesampleapp.default     D  ----- NetworkCommissioning Features: has WiFi. endpointid = 0
+2024-04-19 18:21:04.475 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  onReadCommissioningInfo: vendorId [4978]  productId [1]  wifiEndpointId [0] threadEndpointId [65535]
+2024-04-19 18:21:04.476 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  onCommissioningStatusUpdate nodeId [6004988700462245529]  stage [ReadCommissioningInfo]  errorCode [0]
+2024-04-19 18:21:04.476 31553-31758 CTL                     com.google.homesampleapp.default     D  Successfully finished commissioning step 'ReadCommissioningInfo'
+2024-04-19 18:21:04.476 31553-31758 CTL                     com.google.homesampleapp.default     D  Commissioning stage next step: 'ReadCommissioningInfo' -> 'ArmFailSafe'
+2024-04-19 18:21:04.476 31553-31758 CTL                     com.google.homesampleapp.default     D  Performing next commissioning step 'ArmFailSafe'
+2024-04-19 18:21:04.476 31553-31758 CTL                     com.google.homesampleapp.default     D  Arming failsafe (30 seconds)
+2024-04-19 18:21:04.476 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddingComm]
+2024-04-19 18:21:04.476 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddedComma]
+2024-04-19 18:21:04.476 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27990i S:22019 M:110979176] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 18:21:04.476 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979176 on secure session with LSID: 22019
+2024-04-19 18:21:04.477 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [CommandSen]
+2024-04-19 18:21:04.477 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27989i S:22019 M:110979177 (Ack:264326061)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.477 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979177 on secure session with LSID: 22019
+2024-04-19 18:21:04.477 31553-31758 EM                      com.google.homesampleapp.default     D  Flushed pending ack for MessageCounter:264326061 on exchange 27989i
+2024-04-19 18:21:04.496 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27990i S:22019 M:264326062 (Ack:110979176)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 18:21:04.496 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27990i, Delegate: 0xb400007bca70efd8
+2024-04-19 18:21:04.496 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:110979176 from Retrans Table on exchange 27990i
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [ResponseRe]
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  InvokeResponseMessage =
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  {
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  	suppressResponse = false,
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  	InvokeResponseIBs =
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  	[
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  		InvokeResponseIB =
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  			CommandDataIB =
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandPathIB =
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  					EndpointId = 0x0,
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  					ClusterId = 0x30,
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  					CommandId = 0x1,
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandFields =
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x0 = 0,
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x1 = "" (0 chars),
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.496 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.497 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.497 31553-31758 DMG                     com.google.homesampleapp.default     D  	],
+2024-04-19 18:21:04.497 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.497 31553-31758 DMG                     com.google.homesampleapp.default     D  	InteractionModelRevision = 1
+2024-04-19 18:21:04.497 31553-31758 DMG                     com.google.homesampleapp.default     D  },
+2024-04-19 18:21:04.497 31553-31758 DMG                     com.google.homesampleapp.default     D  Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0001
+2024-04-19 18:21:04.497 31553-31758 CTL                     com.google.homesampleapp.default     D  Received ArmFailSafe response errorCode=0
+2024-04-19 18:21:04.498 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  onCommissioningStatusUpdate nodeId [6004988700462245529]  stage [ArmFailSafe]  errorCode [0]
+2024-04-19 18:21:04.498 31553-31758 CTL                     com.google.homesampleapp.default     D  Successfully finished commissioning step 'ArmFailSafe'
+2024-04-19 18:21:04.498 31553-31758 CTL                     com.google.homesampleapp.default     D  Commissioning stage next step: 'ArmFailSafe' -> 'ConfigRegulatory'
+2024-04-19 18:21:04.498 31553-31758 CTL                     com.google.homesampleapp.default     D  Performing next commissioning step 'ConfigRegulatory'
+2024-04-19 18:21:04.498 31553-31758 CTL                     com.google.homesampleapp.default     D  Setting Regulatory Config
+2024-04-19 18:21:04.498 31553-31758 CTL                     com.google.homesampleapp.default     D  Device does not support configurable regulatory location
+2024-04-19 18:21:04.498 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddingComm]
+2024-04-19 18:21:04.498 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddedComma]
+2024-04-19 18:21:04.498 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27991i S:22019 M:110979178] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 18:21:04.498 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979178 on secure session with LSID: 22019
+2024-04-19 18:21:04.499 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [CommandSen]
+2024-04-19 18:21:04.499 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AwaitingDe]
+2024-04-19 18:21:04.499 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27990i S:22019 M:110979179 (Ack:264326062)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.499 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979179 on secure session with LSID: 22019
+2024-04-19 18:21:04.499 31553-31758 EM                      com.google.homesampleapp.default     D  Flushed pending ack for MessageCounter:264326062 on exchange 27990i
+2024-04-19 18:21:04.531 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27991i S:22019 M:264326063 (Ack:110979178)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 18:21:04.531 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27991i, Delegate: 0xb400007bca709bf8
+2024-04-19 18:21:04.531 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:110979178 from Retrans Table on exchange 27991i
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [ResponseRe]
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  InvokeResponseMessage =
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  {
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  	suppressResponse = false,
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  	InvokeResponseIBs =
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  	[
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  		InvokeResponseIB =
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  			CommandDataIB =
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandPathIB =
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  					EndpointId = 0x0,
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  					ClusterId = 0x30,
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  					CommandId = 0x3,
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandFields =
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x0 = 0,
+2024-04-19 18:21:04.531 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x1 = "" (0 chars),
+2024-04-19 18:21:04.532 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.532 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.532 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.532 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.532 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.532 31553-31758 DMG                     com.google.homesampleapp.default     D  	],
+2024-04-19 18:21:04.532 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.532 31553-31758 DMG                     com.google.homesampleapp.default     D  	InteractionModelRevision = 1
+2024-04-19 18:21:04.532 31553-31758 DMG                     com.google.homesampleapp.default     D  },
+2024-04-19 18:21:04.533 31553-31758 DMG                     com.google.homesampleapp.default     D  Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0003
+2024-04-19 18:21:04.533 31553-31758 CTL                     com.google.homesampleapp.default     D  Received SetRegulatoryConfig response errorCode=0
+2024-04-19 18:21:04.534 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  onCommissioningStatusUpdate nodeId [6004988700462245529]  stage [ConfigRegulatory]  errorCode [0]
+2024-04-19 18:21:04.534 31553-31758 CTL                     com.google.homesampleapp.default     D  Successfully finished commissioning step 'ConfigRegulatory'
+2024-04-19 18:21:04.534 31553-31758 CTL                     com.google.homesampleapp.default     D  Commissioning stage next step: 'ConfigRegulatory' -> 'SendPAICertificateRequest'
+2024-04-19 18:21:04.534 31553-31758 CTL                     com.google.homesampleapp.default     D  Performing next commissioning step 'SendPAICertificateRequest'
+2024-04-19 18:21:04.534 31553-31758 CTL                     com.google.homesampleapp.default     D  Sending request for PAI certificate
+2024-04-19 18:21:04.534 31553-31758 CTL                     com.google.homesampleapp.default     D  Sending Certificate Chain request to 0xb400007d3a6e8078 device
+2024-04-19 18:21:04.540 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddingComm]
+2024-04-19 18:21:04.540 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddedComma]
+2024-04-19 18:21:04.541 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27992i S:22019 M:110979180] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 18:21:04.541 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979180 on secure session with LSID: 22019
+2024-04-19 18:21:04.541 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [CommandSen]
+2024-04-19 18:21:04.541 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AwaitingDe]
+2024-04-19 18:21:04.541 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27991i S:22019 M:110979181 (Ack:264326063)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.541 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979181 on secure session with LSID: 22019
+2024-04-19 18:21:04.541 31553-31758 EM                      com.google.homesampleapp.default     D  Flushed pending ack for MessageCounter:264326063 on exchange 27991i
+2024-04-19 18:21:04.564 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27992i S:22019 M:264326064 (Ack:110979180)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 18:21:04.564 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27992i, Delegate: 0xb400007bca70ced8
+2024-04-19 18:21:04.565 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:110979180 from Retrans Table on exchange 27992i
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [ResponseRe]
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  InvokeResponseMessage =
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  {
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  	suppressResponse = false,
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  	InvokeResponseIBs =
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  	[
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  		InvokeResponseIB =
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  			CommandDataIB =
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandPathIB =
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  					EndpointId = 0x0,
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  					ClusterId = 0x3e,
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  					CommandId = 0x3,
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandFields =
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x0 = [
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  							... (byte string too long) ...
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  					] (552 bytes)
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  	],
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  	InteractionModelRevision = 1
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  },
+2024-04-19 18:21:04.565 31553-31758 DMG                     com.google.homesampleapp.default     D  Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+2024-04-19 18:21:04.565 31553-31758 CTL                     com.google.homesampleapp.default     D  Received certificate chain from the device
+2024-04-19 18:21:04.566 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  onCommissioningStatusUpdate nodeId [6004988700462245529]  stage [SendPAICertificateRequest]  errorCode [0]
+2024-04-19 18:21:04.566 31553-31758 CTL                     com.google.homesampleapp.default     D  Successfully finished commissioning step 'SendPAICertificateRequest'
+2024-04-19 18:21:04.571 31553-31758 CTL                     com.google.homesampleapp.default     D  Commissioning stage next step: 'SendPAICertificateRequest' -> 'SendDACCertificateRequest'
+2024-04-19 18:21:04.572 31553-31758 CTL                     com.google.homesampleapp.default     D  Performing next commissioning step 'SendDACCertificateRequest'
+2024-04-19 18:21:04.572 31553-31758 CTL                     com.google.homesampleapp.default     D  Sending request for DAC certificate
+2024-04-19 18:21:04.572 31553-31758 CTL                     com.google.homesampleapp.default     D  Sending Certificate Chain request to 0xb400007d3a6e8078 device
+2024-04-19 18:21:04.572 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddingComm]
+2024-04-19 18:21:04.572 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddedComma]
+2024-04-19 18:21:04.572 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27993i S:22019 M:110979182] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 18:21:04.572 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979182 on secure session with LSID: 22019
+2024-04-19 18:21:04.573 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [CommandSen]
+2024-04-19 18:21:04.573 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AwaitingDe]
+2024-04-19 18:21:04.573 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27992i S:22019 M:110979183 (Ack:264326064)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.573 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979183 on secure session with LSID: 22019
+2024-04-19 18:21:04.573 31553-31758 EM                      com.google.homesampleapp.default     D  Flushed pending ack for MessageCounter:264326064 on exchange 27992i
+2024-04-19 18:21:04.607 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27993i S:22019 M:264326065 (Ack:110979182)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 18:21:04.607 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27993i, Delegate: 0xb400007bca70dc98
+2024-04-19 18:21:04.607 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:110979182 from Retrans Table on exchange 27993i
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [ResponseRe]
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  InvokeResponseMessage =
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  {
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  	suppressResponse = false,
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  	InvokeResponseIBs =
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  	[
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  		InvokeResponseIB =
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  			CommandDataIB =
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandPathIB =
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  					EndpointId = 0x0,
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  					ClusterId = 0x3e,
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  					CommandId = 0x3,
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandFields =
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x0 = [
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  							... (byte string too long) ...
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  					] (592 bytes)
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  	],
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  	InteractionModelRevision = 1
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  },
+2024-04-19 18:21:04.607 31553-31758 DMG                     com.google.homesampleapp.default     D  Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0003
+2024-04-19 18:21:04.607 31553-31758 CTL                     com.google.homesampleapp.default     D  Received certificate chain from the device
+2024-04-19 18:21:04.609 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  onCommissioningStatusUpdate nodeId [6004988700462245529]  stage [SendDACCertificateRequest]  errorCode [0]
+2024-04-19 18:21:04.609 31553-31758 CTL                     com.google.homesampleapp.default     D  Successfully finished commissioning step 'SendDACCertificateRequest'
+2024-04-19 18:21:04.609 31553-31758 CTL                     com.google.homesampleapp.default     D  Commissioning stage next step: 'SendDACCertificateRequest' -> 'SendAttestationRequest'
+2024-04-19 18:21:04.609 31553-31758 CTL                     com.google.homesampleapp.default     D  Performing next commissioning step 'SendAttestationRequest'
+2024-04-19 18:21:04.609 31553-31758 CTL                     com.google.homesampleapp.default     D  Sending Attestation Request to the device.
+2024-04-19 18:21:04.609 31553-31758 CTL                     com.google.homesampleapp.default     D  Sending Attestation request to 0xb400007d3a6e8078 device
+2024-04-19 18:21:04.609 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddingComm]
+2024-04-19 18:21:04.609 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddedComma]
+2024-04-19 18:21:04.609 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27994i S:22019 M:110979184] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 18:21:04.609 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979184 on secure session with LSID: 22019
+2024-04-19 18:21:04.610 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [CommandSen]
+2024-04-19 18:21:04.610 31553-31758 CTL                     com.google.homesampleapp.default     D  Sent Attestation request, waiting for the Attestation Information
+2024-04-19 18:21:04.610 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AwaitingDe]
+2024-04-19 18:21:04.610 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27993i S:22019 M:110979185 (Ack:264326065)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.610 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979185 on secure session with LSID: 22019
+2024-04-19 18:21:04.610 31553-31758 EM                      com.google.homesampleapp.default     D  Flushed pending ack for MessageCounter:264326065 on exchange 27993i
+2024-04-19 18:21:04.657 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27994i S:22019 M:264326066 (Ack:110979184)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.657 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27994i, Delegate: 0xb400007bca70a598
+2024-04-19 18:21:04.657 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:110979184 from Retrans Table on exchange 27994i
+2024-04-19 18:21:04.835 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27994i S:22019 M:264326067 (Ack:110979184)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 18:21:04.835 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27994i, Delegate: 0xb400007bca70a598
+2024-04-19 18:21:04.835 31553-31758 EM                      com.google.homesampleapp.default     D  CHIP MessageCounter:110979184 not in RetransTable on exchange 27994i
+2024-04-19 18:21:04.835 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [ResponseRe]
+2024-04-19 18:21:04.835 31553-31758 DMG                     com.google.homesampleapp.default     D  InvokeResponseMessage =
+2024-04-19 18:21:04.835 31553-31758 DMG                     com.google.homesampleapp.default     D  {
+2024-04-19 18:21:04.835 31553-31758 DMG                     com.google.homesampleapp.default     D  	suppressResponse = false,
+2024-04-19 18:21:04.835 31553-31758 DMG                     com.google.homesampleapp.default     D  	InvokeResponseIBs =
+2024-04-19 18:21:04.835 31553-31758 DMG                     com.google.homesampleapp.default     D  	[
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  		InvokeResponseIB =
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  			CommandDataIB =
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandPathIB =
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  					EndpointId = 0x0,
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  					ClusterId = 0x3e,
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  					CommandId = 0x1,
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandFields =
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x0 = [
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  							... (byte string too long) ...
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  					] (277 bytes)
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x1 = [
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  							0xdd, 0xed, 0x23, 0xe0, 0xc7, 0xd6, 0xdc, 0x02, 0x87, 0x21, 0x76, 0x1f, 0xb9, 0xa5, 0x16, 0x07, 0xc8, 0x7d, 0x79, 0x99, 0xc9, 0x95, 0x21, 0x90, 0x6a, 0x7a, 0xf5, 0x73, 0xde, 0xfd, 0xb6, 0xa9, 0xc6, 0xd1, 0x99, 0x43, 0x01, 0x1d, 0xeb, 0xbc, 0x4c, 0x
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  					] (64 bytes)
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  	],
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  	InteractionModelRevision = 1
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  },
+2024-04-19 18:21:04.836 31553-31758 DMG                     com.google.homesampleapp.default     D  Received Command Response Data, Endpoint=0 Cluster=0x0000_003E Command=0x0000_0001
+2024-04-19 18:21:04.836 31553-31758 CTL                     com.google.homesampleapp.default     D  Received Attestation Information from the device
+2024-04-19 18:21:04.837 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  onCommissioningStatusUpdate nodeId [6004988700462245529]  stage [SendAttestationRequest]  errorCode [0]
+2024-04-19 18:21:04.837 31553-31758 CTL                     com.google.homesampleapp.default     D  Successfully finished commissioning step 'SendAttestationRequest'
+2024-04-19 18:21:04.837 31553-31758 CTL                     com.google.homesampleapp.default     D  AutoCommissioner setting attestationElements buffer size 277/277
+2024-04-19 18:21:04.837 31553-31758 CTL                     com.google.homesampleapp.default     D  Commissioning stage next step: 'SendAttestationRequest' -> 'AttestationVerification'
+2024-04-19 18:21:04.837 31553-31758 CTL                     com.google.homesampleapp.default     D  Performing next commissioning step 'AttestationVerification'
+2024-04-19 18:21:04.837 31553-31758 CTL                     com.google.homesampleapp.default     D  Verifying attestation
+2024-04-19 18:21:04.873 31553-31758 CTL                     com.google.homesampleapp.default     E  Failed in verifying 'Attestation Information' command received from the device: err 101. Look at AttestationVerificationResult enum to understand the errors
+2024-04-19 18:21:04.874 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  onCommissioningStatusUpdate nodeId [6004988700462245529]  stage [AttestationVerification]  errorCode [172]
+2024-04-19 18:21:04.874 31553-31758 CTL                     com.google.homesampleapp.default     D  Error on commissioning step 'AttestationVerification': '../../src/controller/CHIPDeviceController.cpp:1078: CHIP Error 0x000000AC: Internal error'
+2024-04-19 18:21:04.874 31553-31758 CTL                     com.google.homesampleapp.default     E  Failed to perform commissioning step 8
+2024-04-19 18:21:04.874 31553-31758 CTL                     com.google.homesampleapp.default     D  Going from commissioning step 'AttestationVerification' with lastErr = '../../src/controller/CHIPDeviceController.cpp:1078: CHIP Error 0x000000AC: Internal error' -> 'Cleanup'
+2024-04-19 18:21:04.874 31553-31758 CTL                     com.google.homesampleapp.default     D  Performing next commissioning step 'Cleanup' with completion status = '../../src/controller/CHIPDeviceController.cpp:1078: CHIP Error 0x000000AC: Internal error'
+2024-04-19 18:21:04.874 31553-31758 CTL                     com.google.homesampleapp.default     D  Expiring failsafe on proxy 0xb400007d3a6e8078
+2024-04-19 18:21:04.874 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddingComm]
+2024-04-19 18:21:04.874 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AddedComma]
+2024-04-19 18:21:04.874 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27995i S:22019 M:110979186] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0001:08 (IM:InvokeCommandRequest)
+2024-04-19 18:21:04.874 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979186 on secure session with LSID: 22019
+2024-04-19 18:21:04.874 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [CommandSen]
+2024-04-19 18:21:04.875 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AwaitingDe]
+2024-04-19 18:21:04.875 31553-31758 EM                      com.google.homesampleapp.default     D  <<< [E:27994i S:22019 M:110979187 (Ack:264326067)] (S) Msg TX to 0:FFFFFFFB00000000 [0000] --- Type 0000:10 (SecureChannel:StandaloneAck)
+2024-04-19 18:21:04.875 31553-31758 IN                      com.google.homesampleapp.default     D  (S) Sending msg 110979187 on secure session with LSID: 22019
+2024-04-19 18:21:04.875 31553-31758 EM                      com.google.homesampleapp.default     D  Flushed pending ack for MessageCounter:264326067 on exchange 27994i
+2024-04-19 18:21:04.931 31553-31758 EM                      com.google.homesampleapp.default     D  >>> [E:27995i S:22019 M:264326068 (Ack:110979186)] (S) Msg RX from 0:FFFFFFFB00000000 [0000] --- Type 0001:09 (IM:InvokeCommandResponse)
+2024-04-19 18:21:04.931 31553-31758 EM                      com.google.homesampleapp.default     D  Found matching exchange: 27995i, Delegate: 0xb400007bca7177f8
+2024-04-19 18:21:04.931 31553-31758 EM                      com.google.homesampleapp.default     D  Rxd Ack; Removing MessageCounter:110979186 from Retrans Table on exchange 27995i
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [ResponseRe]
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  InvokeResponseMessage =
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  {
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  	suppressResponse = false,
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  	InvokeResponseIBs =
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  	[
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  		InvokeResponseIB =
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  		{
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  			CommandDataIB =
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  			{
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandPathIB =
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  					EndpointId = 0x0,
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  					ClusterId = 0x30,
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  					CommandId = 0x1,
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  				CommandFields =
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  				{
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x0 = 0,
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  					0x1 = "" (0 chars),
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  				},
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  			},
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  		},
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  	],
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  	InteractionModelRevision = 1
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  },
+2024-04-19 18:21:04.931 31553-31758 DMG                     com.google.homesampleapp.default     D  Received Command Response Data, Endpoint=0 Cluster=0x0000_0030 Command=0x0000_0001
+2024-04-19 18:21:04.931 31553-31758 CTL                     com.google.homesampleapp.default     D  Failsafe disarmed
+2024-04-19 18:21:04.933 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  onCommissioningStatusUpdate nodeId [6004988700462245529]  stage [Cleanup]  errorCode [0]
+2024-04-19 18:21:04.933 31553-31758 CTL                     com.google.homesampleapp.default     D  Successfully finished commissioning step 'Cleanup'
+2024-04-19 18:21:04.933 31553-31758 GHSAFM-3p-...onListener com.google.homesampleapp.default     D  BaseCompletionListener onCommissioningComplete(): nodeId [6004988700462245529] errorCode [172]
+2024-04-19 18:21:04.935 31553-31758 IN                      com.google.homesampleapp.default     D  SecureSession[0xb400007caa740658]: MarkForEviction Type:1 LSID:22019
+2024-04-19 18:21:04.935 31553-31758 SC                      com.google.homesampleapp.default     D  SecureSession[0xb400007caa740658]: Moving from state 'kActive' --> 'kPendingEviction'
+2024-04-19 18:21:04.935 31553-31758 EM                      com.google.homesampleapp.default     E  Failed to send Solitary ack for MessageCounter:264326068 on exchange 27995i:../../src/messaging/ExchangeContext.cpp:144: CHIP Error 0x00000002: Connection aborted
+2024-04-19 18:21:04.935 31553-31758 DMG                     com.google.homesampleapp.default     D  ICR moving to [AwaitingDe]
+2024-04-19 18:21:04.935 31553-31758 IN                      com.google.homesampleapp.default     D  SecureSession[0xb400007caa740658]: Released - Type:1 LSID:22019
+2024-04-19 18:21:04.937 31553-31553 GHSAFM-3p-...gRequested com.google.homesampleapp.default     E  onCommissioningRequested() failed
+                                                                                                    java.lang.IllegalStateException: Commissioning failed with error code [172]
+                                                                                                    	at com.google.homesampleapp.chip.ChipClient$awaitCommissionDevice$2$1.onCommissioningComplete(ChipClient.kt:186)
+                                                                                                    	at chip.devicecontroller.ChipDeviceController.onCommissioningComplete(ChipDeviceController.java:335)
+2024-04-19 18:21:04.947 31553-31553 GHSAFM-3p-...gRequested com.google.homesampleapp.default     D  Commissioning: commissioningServiceDelegate.sendCommissioningError() succeeded
