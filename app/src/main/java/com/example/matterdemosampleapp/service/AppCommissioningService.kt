@@ -25,10 +25,6 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class AppCommissioningService : Service(), CommissioningService.Callback {
 
-    //    @Inject
-//    internal lateinit var devicesRepository: DevicesRepository
-//    @Inject
-//    internal lateinit var devicesStateRepository: DevicesStateRepository
     @Inject
     internal lateinit var chipClient: ChipClient
 

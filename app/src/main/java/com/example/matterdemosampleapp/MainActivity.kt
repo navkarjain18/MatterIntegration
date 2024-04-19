@@ -9,7 +9,6 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.viewModelScope
 import chip.devicecontroller.model.NodeState
 import com.example.matterdemosampleapp.adapter.MatterDevicesAdapter
 import com.example.matterdemosampleapp.chip.ChipClient
@@ -34,7 +33,6 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
-import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
 
@@ -101,6 +99,7 @@ class MainActivity : AppCompatActivity() {
 
         viewDataBinding.btnAdd.setOnClickListener {
             commissionDevice()
+//            chipClient.getCommissionableNodes()
         }
 
 
@@ -181,9 +180,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun reset() {
-        runBlocking {
+        CoroutineScope(Dispatchers.IO).launch {
             DataStorePreference.clearAllPreference()
+            deviceList.forEach {
+                unsubscribeToPeriodicUpdates(it.deviceId ?: 0 )
+            }
         }
+
         deviceList.clear()
         setAdapterData()
     }
@@ -192,13 +195,13 @@ class MainActivity : AppCompatActivity() {
         Log.d(TAG, "subscribeToDevicesPeriodicUpdates()")
 
 
-        CoroutineScope(Dispatchers.IO).launch {
-            // For each one of the real devices
-            deviceList.forEachIndexed { index, device ->
+        // For each one of the real devices
+        deviceList.forEachIndexed { index, device ->
+            CoroutineScope(Dispatchers.IO).launch {
 
                 unsubscribeToPeriodicUpdates(device.deviceId ?: 0)
 
-                val reportCallback =
+                val reportCallback = try {
                     object : SubscriptionHelper.ReportCallbackForDevice(device.deviceId ?: 0) {
                         override fun onReport(nodeState: NodeState) {
                             super.onReport(nodeState)
@@ -208,7 +211,9 @@ class MainActivity : AppCompatActivity() {
                             ) as Boolean?
                             Log.d(">>///", "Response onOffState [${onOffState}]")
                             if (onOffState == null) {
-                                Log.e(TAG, "onReport(): WARNING -> onOffState is NULL. Ignoring.")
+                                Log.e(
+                                    TAG, "onReport(): WARNING -> onOffState is NULL. Ignoring."
+                                )
                                 return
                             }
                             CoroutineScope(Dispatchers.Main).launch {
@@ -216,34 +221,40 @@ class MainActivity : AppCompatActivity() {
                             }
                         }
                     }
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                    null
+                }
+
 
                 try {
-                    val connectedDevicePointer =
-                        chipClient.getConnectedDevicePointer(device.deviceId ?: 0)
-                    subscriptionHelper.awaitSubscribeToPeriodicUpdates(
-                        connectedDevicePointer,
-                        SubscriptionHelper.SubscriptionEstablishedCallbackForDevice(
-                            device.deviceId ?: 0
-                        ),
-                        SubscriptionHelper.ResubscriptionAttemptCallbackForDevice(
-                            device.deviceId ?: 0
-                        ),
-                        reportCallback,
-                    )
+                    if (reportCallback != null) {
+                        val connectedDevicePointer =
+                            chipClient.getConnectedDevicePointer(device.deviceId ?: 0)
+                        subscriptionHelper.awaitSubscribeToPeriodicUpdates(
+                            connectedDevicePointer,
+                            SubscriptionHelper.SubscriptionEstablishedCallbackForDevice(
+                                device.deviceId ?: 0
+                            ),
+                            SubscriptionHelper.ResubscriptionAttemptCallbackForDevice(
+                                device.deviceId ?: 0
+                            ),
+                            reportCallback,
+                        )
+                    }
                 } catch (e: IllegalStateException) {
                     Log.e(TAG, "Can't get connectedDevicePointer for ${device.deviceId}.")
-                    return@forEachIndexed
+                    return@launch
                 }
             }
         }
     }
 
-    private suspend fun unsubscribeToPeriodicUpdates(deviceId :Long) {
+    private suspend fun unsubscribeToPeriodicUpdates(deviceId: Long) {
         Log.d(TAG, "unsubscribeToPeriodicUpdates()")
 
         try {
-            val connectedDevicePtr =
-                chipClient.getConnectedDevicePointer(deviceId )
+            val connectedDevicePtr = chipClient.getConnectedDevicePointer(deviceId)
             subscriptionHelper.awaitUnsubscribeToPeriodicUpdates(connectedDevicePtr)
         } catch (e: IllegalStateException) {
             Log.e(TAG, "Can't get connectedDevicePointer for $deviceId.")
