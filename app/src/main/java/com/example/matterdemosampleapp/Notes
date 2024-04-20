@@ -7,3 +7,10 @@ https://github.com/google-home/sample-apps-for-matter-android/issues/206
 
 Missing DeviceAttestationVerifier configuration at DeviceCommissioner init: using global default, consider passing one in CommissionerInitParams.
 
+
+
+IPV4
+onCommissioningRequested() failed
+java.lang.IllegalStateException: Pairing failed with error code [50]
+at com.google.homesampleapp.chip.ChipClient$awaitEstablishPaseConnection$2$1.onPairingComplete(ChipClient.kt:142)
+at chip.devicecontroller.ChipDeviceController.onPairingComplete(ChipDeviceController.java:329)

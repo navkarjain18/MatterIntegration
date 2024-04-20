@@ -58,6 +58,13 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var subscriptionHelper: SubscriptionHelper
 
+    companion object {
+        private const val STATUS_PAIRING_SUCCESS = 0
+
+        /** Set for the fail-safe timer before onDeviceAttestationFailed is invoked. */
+        private const val DEVICE_ATTESTATION_FAILED_TIMEOUT_SECONDS = 60
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewDataBinding = ActivityMainBinding.inflate(layoutInflater)
@@ -98,6 +105,22 @@ class MainActivity : AppCompatActivity() {
         viewDataBinding.listMatterDevices.adapter = matterDevicesAdapter
 
         viewDataBinding.btnAdd.setOnClickListener {
+
+
+
+            /*
+            * We need our own device attestation delegate as we currently only support attestation
+            of test Matter devices. This DeviceAttestationDelegate makes it possible to ignore device
+            attestation failures, which happen if commissioning production devices.
+            TODO: Look into supporting different Root CAs.
+            FIXME: This currently breaks commissioning. Removed for now
+            * */
+            setDeviceAttestationDelegate()
+
+
+            /*
+            * Commission device
+            * */
             commissionDevice()
 //            chipClient.getCommissionableNodes()
         }
@@ -189,6 +212,42 @@ class MainActivity : AppCompatActivity() {
 
         deviceList.clear()
         setAdapterData()
+    }
+
+    // Device Attestation
+    private fun setDeviceAttestationDelegate(
+        failureTimeoutSeconds: Int = DEVICE_ATTESTATION_FAILED_TIMEOUT_SECONDS
+    ) {
+        chipClient.chipDeviceController.setDeviceAttestationDelegate(failureTimeoutSeconds) {
+                devicePtr,
+                _,
+                errorCode ->
+            Log.d(TAG,
+                "Device attestation errorCode: $errorCode, " +
+                        "Look at 'src/credentials/attestation_verifier/DeviceAttestationVerifier.h' " +
+                        "AttestationVerificationResult enum to understand the errors"
+            )
+
+            if (errorCode == STATUS_PAIRING_SUCCESS) {
+                Log.d(TAG,"DeviceAttestationDelegate: Success on device attestation.")
+                CoroutineScope(Dispatchers.Main).launch {
+                    chipClient.chipDeviceController.continueCommissioning(devicePtr, true)
+                }
+            } else {
+                Log.d(TAG,"DeviceAttestationDelegate: Error on device attestation [$errorCode].")
+                // Ideally, we'd want to show a Dialog and ask the user whether the attestation
+                // failure should be ignored or not.
+                // Unfortunately, the GPS commissioning API is in control at this point, and the
+                // Dialog will only show up after GPS gives us back control.
+                // So, we simply ignore the attestation failure for now.
+                // TODO: Add a new setting to control that behavior.
+                Log.d(TAG,"Ignoring attestation failure.")
+                Log.d(TAG,"Attestation Failed")
+//                viewModelScope.launch {
+//                    chipClient.chipDeviceController.continueCommissioning(devicePtr, true)
+//                }
+            }
+        }
     }
 
     private fun subscribeToDevicesPeriodicUpdates() {
