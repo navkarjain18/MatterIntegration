@@ -23,6 +23,7 @@ import com.example.matterdemosampleapp.listeneres.OnViewClickListener
 import com.example.matterdemosampleapp.local.DataPreferenceKeys
 import com.example.matterdemosampleapp.local.DataStorePreference
 import com.example.matterdemosampleapp.service.AppCommissioningService
+import com.example.matterdemosampleapp.ui.dialogs.LightControlDialog
 import com.example.matterdemosampleapp.utils.AppUtils.convertToAppDeviceType
 import com.example.matterdemosampleapp.utils.encode
 import com.google.android.gms.home.matter.Matter
@@ -193,6 +194,11 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
+            override fun <T> onItemLongClick(view: View, data: T) {
+                super.onItemLongClick(view, data)
+                LightControlDialog(data as? MatterDevice).display(supportFragmentManager)
+            }
+
         })
 
         subscribeToDevicesPeriodicUpdates()
@@ -217,7 +223,7 @@ class MainActivity : AppCompatActivity() {
         chipClient.chipDeviceController.setDeviceAttestationDelegate(failureTimeoutSeconds) { devicePtr, _, errorCode ->
             Log.d(
                 TAG,
-                "Device attestation errorCode: $errorCode, " + "Look at 'src/credentials/attestation_verifier/DeviceAttestationVerifier.h' " + "AttestationVerificationResult enum to understand the errors"
+                "Device attestation errorCode: $errorCode, Look at 'src/credentials/attestation_verifier/DeviceAttestationVerifier.h' AttestationVerificationResult enum to understand the errors"
             )
 
             if (errorCode == STATUS_PAIRING_SUCCESS) {

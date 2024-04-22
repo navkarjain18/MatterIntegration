@@ -1,8 +1,8 @@
 
-package com.example.matterdemosampleapp.toggle.interfaces;
+package com.example.matterdemosampleapp.ui.views.toggle.interfaces;
 
 
-import com.example.matterdemosampleapp.toggle.model.ToggleableView;
+import com.example.matterdemosampleapp.ui.views.toggle.model.ToggleableView;
 
 /**
  * Interface definition for a callback to be invoked when a digital switch is either on/off.

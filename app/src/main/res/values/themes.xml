@@ -16,5 +16,16 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="AppTheme.FullScreenDialog" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/bar_tab_bar</item>
+        <item name="colorPrimaryDark">@color/bar_semi_transparent</item>
+        <item name="colorAccent">@color/brand_accent_primary</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="actionMenuTextColor">@color/brand_accent_primary</item>
+        <item name="android:statusBarColor">@color/system_content_dark</item>
+
+    </style>
+
 
 </resources>

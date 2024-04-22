@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/row_light"
+                layout="@layout/row_light_control"
+                android:layout_width="@dimen/_165sdp"
+                android:layout_height="@dimen/_136sdp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_6sdp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/holder_brightness"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_6sdp"
+                android:outlineSpotShadowColor="@android:color/transparent"
+
+                app:cardBackgroundColor="@color/brand_glass_one"
+                app:cardCornerRadius="@dimen/_10sdp"
+                app:cardElevation="@dimen/_12sdp"
+                app:rippleColor="@color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/brand_glass_one"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_12sdp">
+
+                        <TextView
+                            android:id="@+id/tv_brightness"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/text_brightness"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/SmallFootnotePlus"
+                            android:textColor="@color/brand_accent_secondary" />
+
+                        <TextView
+                            android:id="@+id/tv_brightness_value"
+                            android:layout_width="@dimen/_40sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/radius_10"
+                            android:backgroundTint="@color/bar_dim"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/_2sdp"
+                            android:paddingBottom="@dimen/_2sdp"
+                            android:text="0%"
+                            android:textAllCaps="true"
+                            android:textAppearance="@style/SmallFootnotePlus"
+                            android:textColor="@color/brand_accent_secondary" />
+
+                    </RelativeLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/holder_brightness_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:layout_marginBottom="@dimen/_12sdp"
+                        android:outlineSpotShadowColor="@color/card_elevation_shadow"
+                        app:cardBackgroundColor="@color/system_content_white"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="@dimen/_8sdp"
+                        app:rippleColor="@color/transparent">
+
+                        <com.example.matterdemosampleapp.ui.views.Slider
+                            android:id="@+id/brightness_slider"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_56sdp" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btn_close"
+            android:layout_width="@dimen/_52sdp"
+            android:layout_height="@dimen/_52sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_40sdp"
+            app:cardCornerRadius="@dimen/_360sdp"
+            app:cardElevation="@dimen/_8sdp"
+            app:rippleColor="@color/transparent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_cross" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</layout>

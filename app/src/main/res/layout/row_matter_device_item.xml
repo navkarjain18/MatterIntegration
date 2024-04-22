@@ -31,7 +31,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <com.example.matterdemosampleapp.toggle.LabeledSwitch
+            <com.example.matterdemosampleapp.ui.views.toggle.LabeledSwitch
                 android:id="@+id/labeled_switch"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"

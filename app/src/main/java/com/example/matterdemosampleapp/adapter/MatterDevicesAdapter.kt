@@ -55,6 +55,10 @@ class MatterDevicesAdapter @Inject constructor() :
             list[position]?.isOn = isOn
             itemClickListener?.onItemClick(toggleableView, matterDevice)
         }
+
+        binding.root.setOnClickListener {
+            itemClickListener?.onItemLongClick(it ,matterDevice)
+        }
     }
 
     /**

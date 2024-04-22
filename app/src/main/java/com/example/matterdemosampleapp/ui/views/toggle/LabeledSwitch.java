@@ -1,4 +1,4 @@
-package com.example.matterdemosampleapp.toggle;
+package com.example.matterdemosampleapp.ui.views.toggle;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
@@ -13,7 +13,7 @@ import android.view.MotionEvent;
 import android.view.animation.AccelerateDecelerateInterpolator;
 
 import com.example.matterdemosampleapp.R;
-import com.example.matterdemosampleapp.toggle.model.ToggleableView;
+import com.example.matterdemosampleapp.ui.views.toggle.model.ToggleableView;
 
 
 public class LabeledSwitch extends ToggleableView {

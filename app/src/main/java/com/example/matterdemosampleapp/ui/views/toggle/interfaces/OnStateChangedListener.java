@@ -1,4 +1,4 @@
-package com.example.matterdemosampleapp.toggle.interfaces;
+package com.example.matterdemosampleapp.ui.views.toggle.interfaces;
 
 import android.view.View;
 

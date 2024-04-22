@@ -1,11 +1,11 @@
-package com.example.matterdemosampleapp.toggle.model;
+package com.example.matterdemosampleapp.ui.views.toggle.model;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewDebug;
 
-import com.example.matterdemosampleapp.toggle.interfaces.OnToggledListener;
+import com.example.matterdemosampleapp.ui.views.toggle.interfaces.OnToggledListener;
 
 
 public class ToggleableView extends View {
