@@ -557,7 +557,7 @@ class ClustersHelper @Inject constructor(private val chipClient: ChipClient) {
         return ChipClusters.OnOffCluster(devicePtr, endpoint)
     }
 
-    suspend fun setLevelClusterLevel(deviceId: Long, endpoint: Int , progress : Int) {
+    suspend fun setLevelClusterLevel(deviceId: Long, endpoint: Int, progress: Int) {
         Log.d(TAG, "toggleDeviceStateOnOffCluster())")
         val connectedDevicePtr = try {
             chipClient.getConnectedDevicePointer(deviceId)
@@ -618,6 +618,30 @@ class ClustersHelper @Inject constructor(private val chipClient: ChipClient) {
                     continuation.resume(value)
                 }
 
+                override fun onError(error: java.lang.Exception) {
+                    continuation.resumeWithException(error)
+                }
+
+            })
+        }
+    }
+
+    suspend fun getCurrentLevel(deviceId: Long, endpoint: Int): Int? {
+        val connectedDevicePtr = try {
+            chipClient.getConnectedDevicePointer(deviceId)
+        } catch (e: IllegalStateException) {
+            Log.e(TAG, "Can't get connectedDevicePointer.")
+            return null
+        }
+        return suspendCoroutine { continuation ->
+            getLevelClusterForDevice(
+                connectedDevicePtr,
+                endpoint
+            ).readCurrentLevelAttribute(object :
+                ChipClusters.LevelControlCluster.CurrentLevelAttributeCallback {
+                override fun onSuccess(value: Int?) {
+                    continuation.resume(value)
+                }
                 override fun onError(error: java.lang.Exception) {
                     continuation.resumeWithException(error)
                 }

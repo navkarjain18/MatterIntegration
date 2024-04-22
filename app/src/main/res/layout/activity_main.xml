@@ -10,6 +10,8 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+        <include layout="@layout/layout_background"/>
+
         <include
             android:id="@+id/toolbar"
             layout="@layout/toolbar_optional" />

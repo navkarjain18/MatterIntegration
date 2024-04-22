@@ -79,6 +79,9 @@ dependencies {
     kapt(libs.hilt.compiler)
     implementation(libs.core)
 
+    /*lottie animation*/
+    implementation(libs.lottie)
+
     // Test
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

@@ -35,6 +35,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
+import kotlin.math.roundToInt
 
 
 @AndroidEntryPoint
@@ -42,6 +43,10 @@ class LightControlDialog(private val matterDevice: MatterDevice?) : DialogFragme
 
     private var minValue: Int? = 0
     private var maxValue: Int? = 100
+    private var currentValue: Int? = 100
+
+    private var ratio = 0f
+
     private lateinit var binding: DialogLightControlsBinding
 
     @Inject
@@ -86,30 +91,40 @@ class LightControlDialog(private val matterDevice: MatterDevice?) : DialogFragme
 
     private fun init() {
         CoroutineScope(Dispatchers.IO).launch {
-            minValue = clustersHelper.getMinLevel(matterDevice?.deviceId ?: 0, 1)
-            maxValue = clustersHelper.getMaxLevel(matterDevice?.deviceId ?: 0, 1)
+            minValue = 0
+            maxValue = 100
 
-            withContext(Dispatchers.Main) {
-                controlLight()
+            try {
+                currentValue = clustersHelper.getCurrentLevel(matterDevice?.deviceId ?: 0, 1)
+                ratio = (clustersHelper.getMaxLevel(matterDevice?.deviceId ?: 0, 1) ?: 100) / 100f
+                withContext(Dispatchers.Main) {
+                    controlLight()
+                }
+
+            } catch (e: Exception) {
+                e.printStackTrace()
             }
         }
+
     }
 
     private fun initViews() {
         binding.btnClose.setOnClickListener { dismissAllowingStateLoss() }
+        binding.tvLightName.text = matterDevice?.name
     }
 
     private fun controlLight() {
         binding.brightnessSlider.setMinProgress(minValue ?: 0)
         binding.brightnessSlider.setMaxProgress(maxValue ?: 100)
-        binding.brightnessSlider.setCurrentProgress(50)
+        binding.brightnessSlider.setCurrentProgress(((currentValue ?: 0) / ratio).toInt())
+        binding.tvBrightnessValue.text = "${((currentValue ?: 0) / ratio).roundToInt()}%"
 
         binding.brightnessSlider.setProgressListener(object : ProgressListener {
             override fun beforeProgressChange(progress: Int) { /*not implemented*/
             }
 
             override fun onProgressChange(progress: Int) {
-                binding.tvBrightnessValue.text = "$progress%"
+                binding.tvBrightnessValue.text = "${progress}%"
             }
 
             override fun afterProgressChange(progress: Int) {
@@ -120,8 +135,17 @@ class LightControlDialog(private val matterDevice: MatterDevice?) : DialogFragme
 
     private fun setProgress(progress: Int) {
         CoroutineScope(Dispatchers.IO).launch {
-            clustersHelper.setLevelClusterLevel(matterDevice?.deviceId ?: 0, 1, progress)
+
+            try {
+                clustersHelper.setLevelClusterLevel(
+                    matterDevice?.deviceId ?: 0, 1, ((progress * ratio).toInt())
+                )
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
         }
+
+
     }
 
 }

@@ -43,6 +43,7 @@ timber = "5.0.1"
 uiautomator = "2.2.0"
 zhanghai-compose-preference = "1.0.0"
 zxing = "4.1.0"
+lottie = "6.1.0"
 
 # Dependencies
 [libraries]
@@ -52,6 +53,9 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
 appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+
+lottie = { module = "com.airbnb.android:lottie" , version.ref = "lottie"}
+
 code-scanner = { module = "com.google.android.gms:play-services-code-scanner", version.ref = "code-scanner" }
 constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
 core = { module = "com.google.ar:core", version.ref = "core" }
