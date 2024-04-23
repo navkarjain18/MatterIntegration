@@ -18,14 +18,20 @@ package com.example.matterdemosampleapp.ui.dialogs
 
 import android.app.Dialog
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentManager
+import chip.devicecontroller.model.NodeState
+import com.example.matterdemosampleapp.MainActivity
 import com.example.matterdemosampleapp.R
+import com.example.matterdemosampleapp.chip.ChipClient
 import com.example.matterdemosampleapp.chip.ClustersHelper
+import com.example.matterdemosampleapp.chip.MatterConstants
+import com.example.matterdemosampleapp.chip.SubscriptionHelper
 import com.example.matterdemosampleapp.databinding.DialogLightControlsBinding
 import com.example.matterdemosampleapp.dto.MatterDevice
 import com.example.matterdemosampleapp.ui.views.ProgressListener
@@ -45,12 +51,18 @@ class LightControlDialog(private val matterDevice: MatterDevice?) : DialogFragme
     private var maxValue: Int? = 100
     private var currentValue: Int? = 100
 
-    private var ratio = 0f
+    private var ratio = 1f
 
     private lateinit var binding: DialogLightControlsBinding
 
     @Inject
     lateinit var clustersHelper: ClustersHelper
+
+    /*@Inject
+    lateinit var chipClient: ChipClient
+
+    @Inject
+    lateinit var subscriptionHelper: SubscriptionHelper*/
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -101,6 +113,8 @@ class LightControlDialog(private val matterDevice: MatterDevice?) : DialogFragme
                     controlLight()
                 }
 
+//                subscribeToDevicesPeriodicUpdates()
+
             } catch (e: Exception) {
                 e.printStackTrace()
             }
@@ -128,6 +142,7 @@ class LightControlDialog(private val matterDevice: MatterDevice?) : DialogFragme
             }
 
             override fun afterProgressChange(progress: Int) {
+                binding.tvBrightnessValue.text = "${progress}%"
                 setProgress(progress)
             }
         })
@@ -147,5 +162,100 @@ class LightControlDialog(private val matterDevice: MatterDevice?) : DialogFragme
 
 
     }
+
+    /*fun setResponseLevel(level : Int){
+        if(this::binding.isInitialized){
+            (level/ratio).roundToInt().apply {
+                binding.tvBrightnessValue.text = "$this%"
+                binding.brightnessSlider.setCurrentProgress(this)
+            }
+        }
+    }*/
+
+    /*private fun subscribeToDevicesPeriodicUpdates() {
+        Log.d(">>//", "subscribeToDevicesPeriodicUpdates()")
+
+
+        // For each one of the real devices
+
+            CoroutineScope(Dispatchers.IO).launch {
+
+                unsubscribeToPeriodicUpdates(matterDevice?.deviceId ?: 0)
+
+                val reportCallback = try {
+                    object : SubscriptionHelper.ReportCallbackForDevice(matterDevice?.deviceId ?: 0) {
+                        override fun onReport(nodeState: NodeState) {
+                            super.onReport(nodeState)
+                            // TODO: See HomeViewModel:CommissionDeviceSucceeded for device capabilities
+                            val level = subscriptionHelper.extractAttribute(
+                                nodeState, 1, MatterConstants.LevelControlAttribute
+                            ) as Int?
+                            Log.d(">>//", "Response level [${level}]")
+                            if (level == null) {
+                                Log.e(
+                                    ">>//", "onReport(): WARNING -> level is NULL. Ignoring."
+                                )
+                                return
+                            }
+                            CoroutineScope(Dispatchers.Main).launch {
+
+                                (level/ratio).roundToInt().apply {
+                                    binding.tvBrightnessValue.text = "$this%"
+                                    binding.brightnessSlider.setCurrentProgress(this)
+                                }
+
+
+                            }
+                        }
+                    }
+                } catch (e: Exception) {
+                    e.printStackTrace()
+                    null
+                }
+
+
+                try {
+                    if (reportCallback != null) {
+                        val connectedDevicePointer =
+                            chipClient.getConnectedDevicePointer(matterDevice?.deviceId ?: 0)
+                        subscriptionHelper.awaitSubscribeToPeriodicUpdates(
+                            connectedDevicePointer,
+                            SubscriptionHelper.SubscriptionEstablishedCallbackForDevice(
+                                matterDevice?.deviceId ?: 0
+                            ),
+                            SubscriptionHelper.ResubscriptionAttemptCallbackForDevice(
+                                matterDevice?.deviceId ?: 0
+                            ),
+                            reportCallback,
+                        )
+                    }
+                } catch (e: IllegalStateException) {
+                    Log.e(">>//", "Can't get connectedDevicePointer for ${matterDevice?.deviceId}.")
+                    return@launch
+                }
+            }
+    }
+
+    private suspend fun unsubscribeToPeriodicUpdates(deviceId: Long) {
+        Log.d(">>//", "unsubscribeToPeriodicUpdates()")
+
+        try {
+            val connectedDevicePtr = chipClient.getConnectedDevicePointer(deviceId)
+            subscriptionHelper.awaitUnsubscribeToPeriodicUpdates(connectedDevicePtr)
+        } catch (e: IllegalStateException) {
+            Log.e(">>//", "Can't get connectedDevicePointer for $deviceId.")
+            return
+        }
+    }*/
+
+    /*override fun onDestroy() {
+        super.onDestroy()
+
+        CoroutineScope(Dispatchers.Main).launch {
+            unsubscribeToPeriodicUpdates(matterDevice?.deviceId ?: 0)
+        }
+
+    }*/
+
 
 }

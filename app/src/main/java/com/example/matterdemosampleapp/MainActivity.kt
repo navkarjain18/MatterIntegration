@@ -187,10 +187,14 @@ class MainActivity : AppCompatActivity() {
                 super.onItemClick(view, data)
                 val matterDevice = data as? MatterDevice
 
-                CoroutineScope(Dispatchers.IO).launch {
-                    clustersHelper.setOnOffDeviceStateOnOffCluster(
-                        matterDevice?.deviceId ?: 0L, matterDevice?.isOn == true, 1
-                    )
+                lifecycleScope.launch {
+                    try{
+                        clustersHelper.setOnOffDeviceStateOnOffCluster(
+                            matterDevice?.deviceId ?: 0L, matterDevice?.isOn == true, 1
+                        )
+                    }catch(e : Exception){
+                        e.printStackTrace()
+                    }
                 }
             }
 
@@ -251,7 +255,6 @@ class MainActivity : AppCompatActivity() {
     private fun subscribeToDevicesPeriodicUpdates() {
         Log.d(TAG, "subscribeToDevicesPeriodicUpdates()")
 
-
         // For each one of the real devices
         deviceList.forEachIndexed { index, device ->
             CoroutineScope(Dispatchers.IO).launch {
@@ -266,7 +269,7 @@ class MainActivity : AppCompatActivity() {
                             val onOffState = subscriptionHelper.extractAttribute(
                                 nodeState, 1, OnOffAttribute
                             ) as Boolean?
-                            Log.d(">>///", "Response onOffState [${onOffState}]")
+                            Log.d(">>//", "Response onOffState [${onOffState}]")
                             if (onOffState == null) {
                                 Log.e(
                                     TAG, "onReport(): WARNING -> onOffState is NULL. Ignoring."
@@ -298,6 +301,7 @@ class MainActivity : AppCompatActivity() {
                             ),
                             reportCallback,
                         )
+                        Log.d(TAG, "Subscribe ToPeriodicUpdates()")
                     }
                 } catch (e: IllegalStateException) {
                     Log.e(TAG, "Can't get connectedDevicePointer for ${device.deviceId}.")
